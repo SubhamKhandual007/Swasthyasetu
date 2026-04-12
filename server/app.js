@@ -26,10 +26,12 @@ app.use((req, res, next) => {
   res.setHeader("Cross-Origin-Embedder-Policy", "unsafe-none");
   next();
 });
+const frontendUrl = process.env.FRONTEND_URL ? process.env.FRONTEND_URL.replace(/\/$/, "") : null;
+
 const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:3002",
-  process.env.FRONTEND_URL, // For Render deployment
+  frontendUrl, 
 ].filter(Boolean);
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
