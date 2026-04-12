@@ -1,0 +1,946 @@
+.appContainer {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(135deg, #f5f7fa, #e8e8e8); /* Elegant gradient background */
+}
+
+.fixedHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #d32f2f, #b71c1c); /* Red gradient for header */
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #d4a017; /* Gold border for elegance */
+  animation: slideDown 1s ease-out;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 480px; /* Default for mobile */
+  margin: 0 auto;
+}
+
+.appTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif; /* Classic serif font */
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.bloodCoinsHeader {
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+  color: #d4a017; /* Gold for BloodCoins */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stylishContainer {
+  padding: 60px 15px 80px; /* Adjusted for fixed header */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px; /* Default for mobile */
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7fa, #e8e8e8); /* Elegant gradient */
+  min-height: 100vh;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.stylishContent {
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 160, 23, 0.1); /* Enhanced shadow with gold glow */
+  margin-top: 10px;
+  border: 2px solid #d4a017; /* Gold border for elegance */
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.sectionTitle {
+  color: #8b4513; /* Brown for classic title */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  animation: slideInLeft 1s ease-out;
+}
+
+.inputGrid,
+.stylishInputGrid {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  background: linear-gradient(135deg, #fff, #f5f7fa); /* Subtle gradient for inputs */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d4a017; /* Gold border for classic look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputField:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inputIcon {
+  margin-right: 10px;
+  color: #8b4513;
+  font-size: 1.2rem;
+}
+
+.input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d4a017; /* Gold border for classic look */
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: "Georgia", serif;
+  background: #fff;
+  color: #5c4033; /* Dark brown for text */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus,
+.selectInput:focus {
+  outline: none;
+  border-color: #f4c430; /* Bright gold on focus */
+  box-shadow: 0 0 5px #f4c430;
+}
+
+.selectInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d4a017; /* Gold border for classic look */
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: "Georgia", serif;
+  background: #fff;
+  color: #5c4033; /* Dark brown for text */
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actionButton {
+  background: linear-gradient(45deg, #d4a017, #f4c430); /* Gold gradient for buttons */
+  color: #fff;
+  border: 2px solid #d4a017;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Georgia", serif;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+.actionButton:hover {
+  background: linear-gradient(45deg, #f4c430, #d4a017);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.completedButton {
+  background: linear-gradient(45deg, #757575, #9e9e9e) !important;
+  border-color: #757575 !important;
+  cursor: default;
+  animation: none !important;
+}
+
+.completedButton:hover {
+  transform: none !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.searchButton {
+  background: linear-gradient(45deg, #1b558b, #143d6b);
+  border: 2px solid #1b558b;
+}
+
+.searchButton:hover {
+  background: linear-gradient(45deg, #143d6b, #1b558b);
+  transform: scale(1.05);
+}
+
+.mapContainer {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 160, 23, 0.1); /* Enhanced shadow with gold glow */
+  animation: zoomIn 1.5s ease-out;
+}
+
+/* Stylish Map Class for Leaflet */
+.stylishMap {
+  border: 2px solid #d4a017; /* Gold border for elegance */
+}
+
+.stylishPopup {
+  font-family: "Georgia", serif;
+  color: #5c4033;
+  background: #fff;
+  border: 2px solid #d4a017;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Blood Request Cards and Highlighting */
+.requestList {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.requestCard {
+  background: linear-gradient(135deg, #fff, #f5f7fa); /* Subtle gradient for cards */
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 160, 23, 0.1); /* Enhanced shadow with gold glow */
+  border: 2px solid #d4a017; /* Gold border for elegance */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideInRight 1s ease-out;
+}
+
+.requestCard:hover,
+.requestCard.highlighted {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3), 0 0 25px rgba(212, 160, 23, 0.2);
+}
+
+.requestCard h3 {
+  color: #8b4513;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.requestCard p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #5c4033;
+  font-family: "Georgia", serif;
+}
+
+/* Urgency and Blood Group Filters (Slide/Tabs) */
+.urgencyFilter,
+.bloodGroupFilter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 5px 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-x: auto;
+  animation: slideInLeft 1s ease-out;
+}
+
+.urgencyFilter::-webkit-scrollbar,
+.bloodGroupFilter::-webkit-scrollbar {
+  display: none; /* Hide WebKit scrollbar (Chrome, Safari, Opera) */
+}
+
+.filterButton {
+  background: linear-gradient(45deg, #1b558b, #143d6b); /* Blue gradient for filters */
+  color: #fff;
+  border: 2px solid #d4a017; /* Gold border for elegance */
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Georgia", serif;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filterButton.active {
+  background: linear-gradient(45deg, #d4a017, #f4c430); /* Gold gradient for active */
+  border-color: #f4c430;
+}
+
+.filterButton:hover:not(.active) {
+  background: linear-gradient(45deg, #143d6b, #1b558b);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Donor Table */
+.donorTableContainer {
+  margin-bottom: 20px;
+  overflow-x: auto;
+  animation: slideInRight 1s ease-out;
+}
+
+.stylishDonorTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #fff, #f5f7fa); /* Subtle gradient for table */
+  border: 2px solid #d4a017; /* Gold border for elegance */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(212, 160, 23, 0.1); /* Enhanced shadow with gold glow */
+}
+
+.stylishDonorTable th,
+.stylishDonorTable td {
+  padding: 12px;
+  border: 1px solid #d4a017; /* Gold border for cells */
+  text-align: left;
+  font-family: "Georgia", serif;
+  color: #5c4033;
+}
+
+.stylishDonorTable th {
+  background: linear-gradient(45deg, #1b558b, #143d6b); /* Blue gradient for headers */
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.stylishDonorTable td {
+  background: #fff;
+  font-size: 1rem;
+}
+
+.stylishTableRow:hover {
+  background: #f5e7bc; /* Light gold for hover effect */
+  transform: scale(1.02);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Modal Overlay for Location Picker */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1060;
+  animation: fadeIn 1s ease-out;
+}
+
+.stylishModalContent {
+  background: linear-gradient(135deg, #fff, #f5f7fa); /* Subtle gradient for modal */
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 30px rgba(212, 160, 23, 0.2); /* Enhanced shadow with gold glow */
+  border: 2px solid #d4a017; /* Gold border for elegance */
+  animation: zoomIn 1.5s ease-out;
+}
+
+.modalTitle {
+  color: #8b4513;
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  animation: slideInDown 1s ease-out;
+}
+
+.modalButtons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cancelButton {
+  background: linear-gradient(45deg, #ccc, #999); /* Gray gradient for cancel */
+  color: #333;
+  border: 2px solid #999;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Georgia", serif;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cancelButton:hover {
+  background: linear-gradient(45deg, #999, #ccc);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pin Button for Location Input */
+.pinButton {
+  background: linear-gradient(45deg, #1b558b, #143d6b); /* Blue gradient for pin */
+  color: #fff;
+  border: 2px solid #d4a017; /* Gold border for elegance */
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Georgia", serif;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pinButton:hover {
+  background: linear-gradient(45deg, #143d6b, #1b558b);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Location Field with Pin Button */
+.locationField {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  background: linear-gradient(135deg, #fff, #f5f7fa); /* Subtle gradient for location field */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d4a017; /* Gold border for classic look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.locationField:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* File Upload Styling */
+.fileLabel {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d4a017; /* Gold border for classic look */
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg, #fff, #f5f7fa); /* Subtle gradient */
+  color: #5c4033; /* Dark brown for text */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d4a017; /* Gold border for consistency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fileLabel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #f5f7fa, #fff);
+}
+
+.fileInput {
+  display: none; /* Hide the actual file input */
+}
+
+/* Customized Rewards & Benefits Section (Classic Look) */
+.rewardsSection {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5e7bc, #e8c07d); /* Gold gradient for classic look */
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3), 0 0 30px rgba(212, 160, 23, 0.2); /* Enhanced shadow with gold glow */
+  margin-bottom: 20px;
+  border: 2px solid #d4a017; /* Gold border for elegance */
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.rewardsBadge {
+  text-align: center;
+  font-family: "Playfair Display", serif; /* Classic serif font */
+  color: #8b4513; /* Brown for vintage feel */
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.bloodCoins {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d4a017; /* Gold color for BloodCoins */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.rewardsDescription {
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: #5c4033; /* Dark brown for classic text */
+  font-size: 1rem;
+  margin-bottom: 15px;
+  animation: slideUp 1s ease-out;
+}
+
+.badgeContainer {
+  text-align: center;
+  margin-bottom: 15px;
+  animation: rotateIn 1.5s ease-out;
+}
+
+.badge {
+  font-family: "Playfair Display", serif;
+  color: #8b4513;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.badgeValue {
+  font-family: "Playfair Display", serif;
+  color: #d4a017; /* Gold for badge value */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.redeemButton {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  background: linear-gradient(45deg, #d4a017, #f4c430); /* Gold gradient for button */
+  border: 2px solid #d4a017;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redeemButton:hover {
+  background: linear-gradient(45deg, #f4c430, #d4a017);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablet View (768px and up) */
+@media (min-width: 768px) {
+  .headerContent {
+    max-width: 768px;
+  }
+
+  .stylishContainer {
+    max-width: 768px;
+    padding: 70px 20px 80px;
+  }
+
+  .stylishContent {
+    padding: 30px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .mapContainer {
+    height: 400px; /* Larger map for tablet */
+  }
+
+  .requestList {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+    gap: 20px;
+  }
+
+  .inputGrid,
+  .stylishInputGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for inputs */
+    gap: 20px;
+  }
+
+  .input,
+  .selectInput {
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+
+  .actionButton,
+  .searchButton,
+  .pinButton,
+  .cancelButton,
+  .filterButton {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+
+  .urgencyFilter,
+  .bloodGroupFilter {
+    flex-wrap: wrap; /* Allow wrapping instead of scrolling */
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .requestCard {
+    padding: 20px;
+  }
+
+  .requestCard h3 {
+    font-size: 1.5rem;
+  }
+
+  .requestCard p {
+    font-size: 1.1rem;
+  }
+
+  .stylishDonorTable th,
+  .stylishDonorTable td {
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+
+  .rewardsSection {
+    padding: 30px;
+  }
+
+  .rewardsBadge,
+  .rewardsDescription,
+  .badge,
+  .badgeValue {
+    font-size: 1.3rem;
+  }
+
+  .bloodCoins {
+    font-size: 2rem;
+  }
+
+  .redeemButton {
+    width: 250px;
+  }
+
+  .modalTitle {
+    font-size: 1.8rem;
+  }
+
+  .stylishModalContent {
+    max-width: 600px;
+  }
+}
+
+/* Desktop View (1024px and up) */
+@media (min-width: 1024px) {
+  .headerContent {
+    max-width: 1200px;
+  }
+
+  .stylishContainer {
+    max-width: 1200px;
+    padding: 80px 30px 80px;
+  }
+
+  .stylishContent {
+    padding: 40px;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .mapContainer {
+    height: 500px; /* Larger map for desktop */
+  }
+
+  .requestList {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 25px;
+  }
+
+  .inputGrid,
+  .stylishInputGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for inputs */
+    gap: 25px;
+  }
+
+  .input,
+  .selectInput {
+    font-size: 1.3rem;
+    padding: 16px;
+  }
+
+  .actionButton,
+  .searchButton,
+  .pinButton,
+  .cancelButton,
+  .filterButton {
+    font-size: 1.2rem;
+    padding: 14px 28px;
+  }
+
+  .urgencyFilter,
+  .bloodGroupFilter {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .requestCard {
+    padding: 25px;
+  }
+
+  .requestCard h3 {
+    font-size: 1.7rem;
+  }
+
+  .requestCard p {
+    font-size: 1.2rem;
+  }
+
+  .stylishDonorTable th,
+  .stylishDonorTable td {
+    padding: 16px;
+    font-size: 1.2rem;
+  }
+
+  .rewardsSection {
+    padding: 40px;
+  }
+
+  .rewardsBadge,
+  .rewardsDescription,
+  .badge,
+  .badgeValue {
+    font-size: 1.5rem;
+  }
+
+  .bloodCoins {
+    font-size: 2.5rem;
+  }
+
+  .redeemButton {
+    width: 300px;
+  }
+
+  .modalTitle {
+    font-size: 2rem;
+  }
+
+  .stylishModalContent {
+    max-width: 700px;
+  }
+}
+
+/* Mobile Responsiveness (up to 480px) - Already defined, keeping as is */
+@media (max-width: 480px) {
+  .stylishContainer {
+    padding: 60px 10px 80px;
+    max-width: 100%;
+  }
+
+  .stylishContent {
+    padding: 15px;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .input,
+  .selectInput {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .actionButton,
+  .searchButton,
+  .pinButton,
+  .cancelButton,
+  .filterButton {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+
+  .mapContainer {
+    height: 200px;
+  }
+
+  .requestCard {
+    padding: 10px;
+  }
+
+  .requestCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .requestCard p {
+    font-size: 0.9rem;
+  }
+
+  .urgencyFilter,
+  .bloodGroupFilter {
+    padding: 5px;
+  }
+
+  .stylishDonorTable th,
+  .stylishDonorTable td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .rewardsSection {
+    padding: 15px;
+  }
+
+  .rewardsBadge,
+  .rewardsDescription,
+  .badge,
+  .badgeValue {
+    font-size: 1rem;
+  }
+
+  .bloodCoins {
+    font-size: 1.4rem;
+  }
+
+  .redeemButton {
+    width: 150px;
+  }
+
+  .modalTitle {
+    font-size: 1.2rem;
+  }
+
+  .stylishInputGrid {
+    gap: 12px;
+  }
+
+  .inputField,
+  .locationField {
+    margin-bottom: 12px;
+    padding: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 2px solid #d4a017;
+  }
+
+  .input,
+  .selectInput {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #d4a017;
+    background: #fff;
+    color: #5c4033;
+    font-family: "Georgia", serif;
+  }
+
+  .locationField {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+  }
+
+  .inputIcon {
+    margin-right: 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #8b4513;
+  }
+
+  .pinButton {
+    margin-left: 0;
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background: linear-gradient(45deg, #1b558b, #143d6b);
+    color: #fff;
+    border: 2px solid #d4a017;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Georgia", serif;
+  }
+
+  .pinButton:hover {
+    background: linear-gradient(45deg, #143d6b, #1b558b);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .fileLabel {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    border: 2px solid #d4a017;
+    font-family: "Georgia", serif;
+    color: #5c4033;
+  }
+}
+
+/* Animations for Beauty */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(212, 160, 23, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(212, 160, 23, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 160, 23, 0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate(0deg) scale(0.8); }
+  to { opacity: 1; transform: rotate(360deg) scale(1); }
+}

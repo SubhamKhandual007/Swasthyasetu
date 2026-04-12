@@ -1,0 +1,23 @@
+{
+  "name": "Swasthya Setu",
+  "short_name": "Swasthya Setu",
+  "start_url": "/home",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e88e5",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "description": "An app that improves health management through digital solutions.",
+  "orientation": "portrait",
+  "scope": "/"
+}

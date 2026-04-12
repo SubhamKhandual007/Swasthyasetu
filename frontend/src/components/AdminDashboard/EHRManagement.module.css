@@ -1,0 +1,182 @@
+.container {
+  padding: 30px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.headerTitle {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.patientListContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+.patientList {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.patientCard {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  margin-bottom: 8px;
+}
+
+.patientCard:hover {
+  background-color: #f1f8ff;
+}
+
+.patientCard.selected {
+  background-color: #e3f2fd;
+  border-color: #90caf9;
+}
+
+.patientInitial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.patientInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.patientInfo strong {
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.patientInfo small {
+  color: #7f8c8d;
+}
+
+.ehrEditorContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  min-height: calc(100vh - 120px);
+}
+
+.ehrHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.ehrHeader h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tabsContainer {
+  display: flex;
+  border-bottom: 2px solid #ecf0f1;
+  margin-bottom: 25px;
+  overflow-x: auto;
+}
+
+.tabBtn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  color: #7f8c8d;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tabBtn:hover {
+  color: #34495e;
+}
+
+.tabBtn.active {
+  color: #3498db;
+  border-bottom-color: #3498db;
+}
+
+.tabContent {
+  padding: 10px 0;
+}
+
+.dynamicCard {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e9ecef;
+}
+
+.fileUploadCard {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px dashed #bdc3c7;
+  text-align: center;
+}
+
+.fileUploadCard h5 {
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 400px;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+/* Customizing scrollbar for patient list */
+.patientList::-webkit-scrollbar {
+  width: 6px;
+}
+.patientList::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+.patientList::-webkit-scrollbar-thumb {
+  background: #bdc3c7; 
+  border-radius: 3px;
+}
+.patientList::-webkit-scrollbar-thumb:hover {
+  background: #95a5a6; 
+}

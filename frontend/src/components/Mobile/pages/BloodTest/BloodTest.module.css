@@ -1,0 +1,688 @@
+.container {
+  padding: 20px 15px 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px; /* Default for mobile */
+  margin: 0 auto;
+  background: #f5f7fa;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: "Playfair Display", serif;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default for mobile */
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.purpleCard {
+  background: linear-gradient(45deg, #9b59b6, #e74c3c);
+  color: #fff;
+}
+
+.greenCard {
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+  color: #fff;
+}
+
+.iconContainer {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greenIcon {
+  color: #27ae60;
+  width: 24px;
+  height: 24px;
+}
+
+.purpleIcon {
+  color: #9b59b6;
+  width: 24px;
+  height: 24px;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.cardSubtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.labsSection {
+  margin: 20px 0;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: "Playfair Display", serif;
+}
+
+.seeMoreBtn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.seeMoreBtn:hover {
+  color: #2980b9;
+}
+
+.labsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default for mobile */
+  gap: 15px;
+}
+
+.labCard {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.labCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.labAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 2px solid #eee;
+}
+
+.labAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.labName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.labDistance {
+  color: #3498db;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.starIcon {
+  color: #f1c40f;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.rating {
+  color: #7f8c8d;
+  font-size: 0.8rem;
+}
+
+/* Tablet View (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 30px 20px 80px;
+  }
+
+  .greeting {
+    font-size: 2.5rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for tablet */
+    gap: 20px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .iconContainer {
+    padding: 12px;
+  }
+
+  .greenIcon,
+  .purpleIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardSubtitle {
+    font-size: 1rem;
+  }
+
+  .labsGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for tablet */
+    gap: 20px;
+  }
+
+  .labCard {
+    padding: 20px;
+  }
+
+  .labAvatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .labName {
+    font-size: 1.2rem;
+  }
+
+  .labDistance {
+    font-size: 0.9rem;
+  }
+
+  .starIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .rating {
+    font-size: 0.9rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .seeMoreBtn {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop View (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 40px 30px 80px;
+  }
+
+  .greeting {
+    font-size: 3rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+    gap: 25px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .iconContainer {
+    padding: 15px;
+  }
+
+  .greenIcon,
+  .purpleIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+
+  .cardSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .labsGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+    gap: 25px;
+  }
+
+  .labCard {
+    padding: 25px;
+  }
+
+  .labAvatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .labName {
+    font-size: 1.4rem;
+  }
+
+  .labDistance {
+    font-size: 1rem;
+  }
+
+  .starIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .rating {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .seeMoreBtn {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Responsiveness (up to 480px) - Already defined, keeping as is */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px 60px;
+    max-width: 100%;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .iconContainer {
+    padding: 8px;
+  }
+
+  .cardTitle {
+    font-size: 0.9rem;
+  }
+
+  .cardSubtitle {
+    font-size: 0.7rem;
+  }
+
+  .labsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .labCard {
+    padding: 12px;
+  }
+
+  .labAvatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .labName {
+    font-size: 0.9rem;
+  }
+
+  .labDistance {
+    font-size: 0.7rem;
+  }
+
+  .starIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .rating {
+    font-size: 0.7rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+}
+
+.slipContainer {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7fa, #e0e7f0);
+  min-height: 100vh;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.slipDetails {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.brandTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+.patientInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.patientDetails {
+  flex: 1;
+  min-width: 250px;
+}
+
+.detailItem {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+.detailItem strong {
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.qrCodeContainer {
+  text-align: center;
+  flex: 0 0 120px;
+}
+
+.qrCodeText {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.divider {
+  border: 2px solid #27ae60;
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.appointmentTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.appointmentDetails {
+  margin-bottom: 20px;
+}
+
+.instructions {
+  font-size: 1rem;
+  color: #7f8c8d;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 15px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #27ae60;
+}
+
+.barcodeContainer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.barcode {
+  width: 180px;
+  height: 40px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.footerText {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-top: 25px;
+  font-family: "Open Sans", sans-serif;
+  border-top: 1px dashed #e0e0e0;
+  padding-top: 10px;
+}
+
+.downloadButton {
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+.downloadButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(39, 174, 96, 0.5);
+}
+
+.downloadButton:disabled {
+  background: #7f8c8d;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .slipContainer {
+    padding: 15px 10px;
+    max-width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .slipDetails {
+    padding: 15px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .brandTitle {
+    font-size: 1.2rem;
+  }
+
+  .patientInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .patientDetails {
+    margin-bottom: 15px;
+  }
+
+  .qrCodeContainer {
+    margin-left: 0;
+  }
+
+  .detailItem {
+    font-size: 0.9rem;
+  }
+
+  .qrCodeText {
+    font-size: 0.8rem;
+  }
+
+  .appointmentTitle {
+    font-size: 1.5rem;
+  }
+
+  .instructions {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .downloadButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .slipContainer {
+    max-width: 500px;
+  }
+
+  .patientInfo {
+    flex-direction: row;
+  }
+
+  .patientDetails {
+    flex: 1;
+  }
+
+  .qrCodeContainer {
+    margin-left: 20px;
+  }
+}

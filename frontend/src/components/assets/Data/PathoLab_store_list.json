@@ -1,0 +1,1010 @@
+[
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Dr Lal PathLabs Franchise",
+        "Direction Co-ordination": "20°20'02.2\"N 85°49'03.1\"E",
+        "Contact": 9337255980,
+        "storeid": "plab001",
+        "Latitude": 20.333946192751423,
+        "Longitude": 85.81752849365483,
+        "Address": "Dr Lal PathLabs Franchise, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Kidney Function Test",
+                "Price": 449
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            },
+            {
+                "Test": "Mini Health Package",
+                "Price": 799
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            },
+            {
+                "Test": "Basic Health Check",
+                "Price": 499
+            },
+            {
+                "Test": "Complete Health Check",
+                "Price": 1499
+            },
+            {
+                "Test": "Immunity Health Check",
+                "Price": 899
+            },
+            {
+                "Test": "Self Individual Test",
+                "Price": 199
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "BIOLAB",
+        "Direction Co-ordination": "20°19'12.8\"N 85°49'05.0\"E",
+        "Contact": "",
+        "storeid": "plab002",
+        "Latitude": 20.320211765306965,
+        "Longitude": 85.81805852023275,
+        "Address": "BIOLAB, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1899
+            },
+            {
+                "Test": "Mini Health Package",
+                "Price": 799
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Pathkind Labs",
+        "Direction Co-ordination": "20°20'09.6\"N 85°49'16.7\"E",
+        "Contact": 9040011909,
+        "storeid": "plab003",
+        "Latitude": 20.33600077813348,
+        "Longitude": 85.8213043266652,
+        "Address": "Pathkind Labs, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.8,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Kidney Function Test",
+                "Price": 449
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Pathkind Labs",
+        "Direction Co-ordination": "20°20'10.2\"N 85°48'33.6\"E",
+        "Contact": 9938323974,
+        "storeid": "plab004",
+        "Latitude": 20.33616914202833,
+        "Longitude": 85.80933809198048,
+        "Address": "Pathkind Labs, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": false,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Dr. Lal Path Labs",
+        "Direction Co-ordination": "20°19'38.2\"N 85°48'36.1\"E",
+        "Contact": 7608000950,
+        "storeid": "plab005",
+        "Latitude": 20.327274031013808,
+        "Longitude": 85.81003691380737,
+        "Address": "Dr. Lal Path Labs, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Manas Path Lab",
+        "Direction Co-ordination": "20°20'13.4\"N 85°49'38.9\"E",
+        "Contact": "",
+        "storeid": "plab006",
+        "Latitude": 20.33706432997044,
+        "Longitude": 85.82745726813057,
+        "Address": "Manas Path Lab, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.4,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": false
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "KRISHNA HEALTH SOLUTION",
+        "Direction Co-ordination": "20°21'55.2\"N 85°49'03.7\"E",
+        "Contact": "",
+        "storeid": "plab007",
+        "Latitude": 20.36534055125247,
+        "Longitude": 85.81769062092128,
+        "Address": "KRISHNA HEALTH SOLUTION, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.3,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            }
+        ],
+        "HomeCollection": false,
+        "NABL Certified": false
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Sadhana Clinic & Laboratory",
+        "Direction Co-ordination": "20°19'57.2\"N 85°48'48.3\"E",
+        "Contact": 9337357976,
+        "storeid": "plab008",
+        "Latitude": 20.332563233548083,
+        "Longitude": 85.81341535804714,
+        "Address": "Sadhana Clinic & Laboratory, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "BP HEALTH CARE",
+        "Direction Co-ordination": "20°20'06.3\"N 85°49'11.9\"E",
+        "Contact": 9437880315,
+        "storeid": "plab009",
+        "Latitude": 20.3350794440249,
+        "Longitude": 85.81996732357831,
+        "Address": "BP HEALTH CARE, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Arogyam",
+        "Direction Co-ordination": "20°20'07.5\"N 85°49'22.2\"E",
+        "Contact": 9238613435,
+        "storeid": "plab010",
+        "Latitude": 20.335423053137568,
+        "Longitude": 85.82282999386355,
+        "Address": "Arogyam, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Khushi Patho Lab",
+        "Direction Co-ordination": "20°19'19.5\"N 85°49'08.3\"E",
+        "Contact": 9338224808,
+        "storeid": "plab011",
+        "Latitude": 20.322091757041967,
+        "Longitude": 85.81897552779844,
+        "Address": "Khushi Patho Lab, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.4,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": false
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Ansh Clinic and Patholab",
+        "Direction Co-ordination": "20°22'04.4\"N 85°49'58.5\"E",
+        "Contact": 8018790904,
+        "storeid": "plab012",
+        "Latitude": 20.36659448675752,
+        "Longitude": 85.83051812544095,
+        "Address": "Ansh Clinic and Patholab, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "PATHOLOGY LAB",
+        "Direction Co-ordination": "20°20'22.6\"N 85°48'34.6\"E",
+        "Contact": 9938323974,
+        "storeid": "plab013",
+        "Latitude": 20.33960637416487,
+        "Longitude": 85.8096050983977,
+        "Address": "PATHOLOGY LAB, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            }
+        ],
+        "HomeCollection": false,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Health Cure Poly Clinic & Lab",
+        "Direction Co-ordination": "20°20'07.9\"N 85°49'14.2\"E",
+        "Contact": 6742741523,
+        "storeid": "plab014",
+        "Latitude": 20.33553327080482,
+        "Longitude": 85.82059839605505,
+        "Address": "Health Cure Poly Clinic & Lab, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Acharya Drug House",
+        "Direction Co-ordination": "20°20'06.7\"N 85°49'20.3\"E",
+        "Contact": 9861416605,
+        "storeid": "plab015",
+        "Latitude": 20.335183554039705,
+        "Longitude": 85.82231500975001,
+        "Address": "Acharya Drug House, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.4,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            }
+        ],
+        "HomeCollection": false,
+        "NABL Certified": false
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Dr Lal PathLabs - Patient Service Centre",
+        "Direction Co-ordination": "20°20'00.4\"N 85°49'02.0\"E",
+        "Contact": 8062565234,
+        "storeid": "plab016",
+        "Latitude": 20.333442284539526,
+        "Longitude": 85.81721526413385,
+        "Address": "Dr Lal PathLabs - Patient Service Centre, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "The Clinic & Lab",
+        "Direction Co-ordination": "20°20'15.0\"N 85°48'33.3\"E",
+        "Contact": "",
+        "storeid": "plab017",
+        "Latitude": 20.337489980275148,
+        "Longitude": 85.80926177564962,
+        "Address": "The Clinic & Lab, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": false
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Naman Diagnostics Center",
+        "Direction Co-ordination": "20°15'37.8\"N 85°47'39.3\"E",
+        "Contact": 9937041665,
+        "storeid": "plab018",
+        "Latitude": 20.260506210037917,
+        "Longitude": 85.79425334601765,
+        "Address": "Naman Diagnostics Center, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.3,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            }
+        ],
+        "HomeCollection": false,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "SHANTI CLINIC AND LAB",
+        "Direction Co-ordination": "20°19'50.0\"N 85°48'24.3\"E",
+        "Contact": 8598975921,
+        "storeid": "plab019",
+        "Latitude": 20.33054814464137,
+        "Longitude": 85.80675857769074,
+        "Address": "SHANTI CLINIC AND LAB, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Dr Lal PathLabs - Patient Service Centre",
+        "Direction Co-ordination": "20°20'17.1\"N 85°48'31.5\"E",
+        "Contact": 8062645703,
+        "storeid": "plab020",
+        "Latitude": 20.338087284472362,
+        "Longitude": 85.80874679154074,
+        "Address": "Dr Lal PathLabs - Patient Service Centre, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Damana Square",
+        "Patholab Name": "Medlife Patholabs",
+        "Direction Co-ordination": "20°22'39.6\"N 85°48'59.2\"E",
+        "Contact": 9853614498,
+        "storeid": "plab021",
+        "Latitude": 20.37765898714403,
+        "Longitude": 85.8164458744245,
+        "Address": "Medlife Patholabs, Damana Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "GENPATH DIAGNOSTICS. Metropolis Lab",
+        "Direction Co-ordination": "20°21'11.6\"N 85°49'29.2\"E",
+        "Contact": 9439389355,
+        "storeid": "plab022",
+        "Latitude": 20.35322533195416,
+        "Longitude": 85.82477656737932,
+        "Address": "GENPATH DIAGNOSTICS. Metropolis Lab, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.8,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Dr Lal Patho Lab",
+        "Direction Co-ordination": "20°20'55.1\"N 85°49'12.9\"E",
+        "Contact": "",
+        "storeid": "plab023",
+        "Latitude": 20.350561966784934,
+        "Longitude": 85.82161187033428,
+        "Address": "Dr Lal Patho Lab, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Medlife Patholabs",
+        "Direction Co-ordination": "20°22'06.0\"N 85°49'12.8\"E",
+        "Contact": 9853614498,
+        "storeid": "plab024",
+        "Latitude": 20.368325435684223,
+        "Longitude": 85.82021712154751,
+        "Address": "Medlife Patholabs, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Dhruba Patholab and Clinic",
+        "Direction Co-ordination": "20°21'27.2\"N 85°49'04.8\"E",
+        "Contact": 9338216195,
+        "storeid": "plab025",
+        "Latitude": 20.357562989069883,
+        "Longitude": 85.81798552909562,
+        "Address": "Dhruba Patholab and Clinic, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.4,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": false
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Dr Lal Pathlabs Sample Collection Centre",
+        "Direction Co-ordination": "20°21'25.3\"N 85°49'40.1\"E",
+        "Contact": 9937733301,
+        "storeid": "plab026",
+        "Latitude": 20.357019817708878,
+        "Longitude": 85.82780241417683,
+        "Address": "Dr Lal Pathlabs Sample Collection Centre, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Dr Lal PathLabs (Authorized Center)",
+        "Direction Co-ordination": "20°19'40.9\"N 85°49'08.6\"E",
+        "Contact": 7077053357,
+        "storeid": "plab027",
+        "Latitude": 20.328035635557185,
+        "Longitude": 85.81906234284232,
+        "Address": "Dr Lal PathLabs (Authorized Center), Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Ansh Clinic and Patholab",
+        "Direction Co-ordination": "20°22'11.6\"N 85°49'44.1\"E",
+        "Contact": 8018790904,
+        "storeid": "plab028",
+        "Latitude": 20.369876465040882,
+        "Longitude": 85.82891370515007,
+        "Address": "Ansh Clinic and Patholab, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Redcliffe Labs - Collection Center",
+        "Direction Co-ordination": "20°22'18.5\"N 85°49'39.2\"E",
+        "Contact": 7969122638,
+        "storeid": "plab029",
+        "Latitude": 20.37180757156678,
+        "Longitude": 85.82754041423351,
+        "Address": "Redcliffe Labs - Collection Center, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.8,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1099
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Redcliffe Labs - Bhubaneswar (NABL M(EL)T Recognised)",
+        "Direction Co-ordination": "20°19'41.3\"N 85°48'53.5\"E",
+        "Contact": 8988988787,
+        "storeid": "plab030",
+        "Latitude": 20.328129638602775,
+        "Longitude": 85.81486266783045,
+        "Address": "Redcliffe Labs - Bhubaneswar (NABL M(EL)T Recognised), Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 799
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Krhishna Patho Lab",
+        "Direction Co-ordination": "20°22'03.4\"N 85°49'52.7\"E",
+        "Contact": 9439828868,
+        "storeid": "plab031",
+        "Latitude": 20.367623476883395,
+        "Longitude": 85.83131696425407,
+        "Address": "Krhishna Patho Lab, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "SAISUN HEALTH CARE & GLOBAL PHARMA",
+        "Direction Co-ordination": "20°21'43.7\"N 85°48'30.6\"E",
+        "Contact": 6371368107,
+        "storeid": "plab032",
+        "Latitude": 20.362129576756406,
+        "Longitude": 85.80851196692932,
+        "Address": "SAISUN HEALTH CARE & GLOBAL PHARMA, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.4,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Fever Panel",
+                "Price": 599
+            }
+        ],
+        "HomeCollection": false,
+        "NABL Certified": false
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Sanjibani Diagnostics",
+        "Direction Co-ordination": "20°21'48.0\"N 85°49'21.5\"E",
+        "Contact": 8144280901,
+        "storeid": "plab033",
+        "Latitude": 20.36332111881534,
+        "Longitude": 85.82264972563836,
+        "Address": "Sanjibani Diagnostics, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.6,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Pathkind Labs",
+        "Direction Co-ordination": "20°22'48.7\"N 85°49'50.7\"E",
+        "Contact": 8908065277,
+        "storeid": "plab034",
+        "Latitude": 20.380184614286307,
+        "Longitude": 85.83074134798132,
+        "Address": "Pathkind Labs, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.7,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Diabetic Profile",
+                "Price": 399
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "MedPlus Patia",
+        "Direction Co-ordination": "20°21'03.0\"N 85°49'31.0\"E",
+        "Contact": 6302750241,
+        "storeid": "plab035",
+        "Latitude": 20.350823458612364,
+        "Longitude": 85.82528862149633,
+        "Address": "MedPlus Patia, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.5,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Thyroid Profile",
+                "Price": 499
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 1999
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    },
+    {
+        "Area": "Patia Square",
+        "Patholab Name": "Redcliffe Labs",
+        "Direction Co-ordination": "20°20'17.2\"N 85°48'30.6\"E",
+        "Contact": 7969122538,
+        "storeid": "plab036",
+        "Latitude": 20.33810821504227,
+        "Longitude": 85.80851196699125,
+        "Address": "Redcliffe Labs, Patia Square, Bhubaneswar, Odisha, India",
+        "Rating": 4.8,
+        "Services": [
+            {
+                "Test": "Complete Blood Count (CBC)",
+                "Price": 299
+            },
+            {
+                "Test": "Lipid Profile",
+                "Price": 599
+            },
+            {
+                "Test": "Full Body Checkup",
+                "Price": 799
+            }
+        ],
+        "HomeCollection": true,
+        "NABL Certified": true
+    }
+]

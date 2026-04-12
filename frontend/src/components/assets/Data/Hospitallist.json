@@ -1,0 +1,1648 @@
+[
+    {
+        "id": "H001",
+        "name": "Apollo Hospitals",
+        "latitude": 20.2706,
+        "longitude": 85.8434,
+        "imageUrl": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.8,
+        "specialties": [
+            "Cardiology",
+            "Neurology",
+            "Orthopedics",
+            "Oncology"
+        ],
+        "bedAvailability": {
+            "general": 250,
+            "icu": 50,
+            "ventilators": 20
+        },
+        "services": [
+            {
+                "name": "General Consultation",
+                "price": 500,
+                "availability": true
+            },
+            {
+                "name": "Cardiac Surgery",
+                "price": 20000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 5,
+            "estimatedResponseTime": "10 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Star Health"
+        ],
+        "contact": {
+            "phone": "+91-674-666-1016",
+            "email": "info@apollohospitals.com"
+        },
+        "address": "Plot No. 251, Sainik School Road, Unit 15, Bhubaneswar, Odisha 751005",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H002",
+        "name": "Kalinga Institute of Medical Sciences (KIMS)",
+        "latitude": 20.3528,
+        "longitude": 85.8194,
+        "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.6,
+        "specialties": [
+            "Pediatrics",
+            "Cardiology",
+            "Neurology",
+            "Gastroenterology"
+        ],
+        "bedAvailability": {
+            "general": 300,
+            "icu": 60,
+            "ventilators": 25
+        },
+        "services": [
+            {
+                "name": "Pediatric Surgery",
+                "price": 10000,
+                "availability": true
+            },
+            {
+                "name": "Dialysis",
+                "price": 2000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 6,
+            "estimatedResponseTime": "12 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "ICICI Lombard"
+        ],
+        "contact": {
+            "phone": "+91-674-710-3800",
+            "email": "kims@kiit.ac.in"
+        },
+        "address": "Kushabhadra Campus (KIIT Campus-5), Patia, Bhubaneswar, Odisha 751024",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H003",
+        "name": "SUM Ultimate Medicare",
+        "latitude": 20.2467,
+        "longitude": 85.7853,
+        "imageUrl": "https://plus.unsplash.com/premium_photo-1673953509975-576678fa6710?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.7,
+        "specialties": [
+            "Cardiology",
+            "Oncology",
+            "Nephrology",
+            "Neurosurgery"
+        ],
+        "bedAvailability": {
+            "general": 200,
+            "icu": 40,
+            "ventilators": 15
+        },
+        "services": [
+            {
+                "name": "Cancer Treatment",
+                "price": 25000,
+                "availability": true
+            },
+            {
+                "name": "Neurology Consultation",
+                "price": 600,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 4,
+            "estimatedResponseTime": "10 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Religare Health"
+        ],
+        "contact": {
+            "phone": "+91-674-238-6300",
+            "email": "info@sumultimate.com"
+        },
+        "address": "K-8, Kalinga Nagar, Ghatikia, Bhubaneswar, Odisha 751030",
+        "waitTime": "18 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H004",
+        "name": "All India Institute of Medical Sciences (AIIMS) Bhubaneswar",
+        "latitude": 20.2399,
+        "longitude": 85.7728,
+        "imageUrl": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.5,
+        "specialties": [
+            "Cardiology",
+            "Neurology",
+            "Orthopedics",
+            "Pediatrics"
+        ],
+        "bedAvailability": {
+            "general": 500,
+            "icu": 100,
+            "ventilators": 30
+        },
+        "services": [
+            {
+                "name": "General Surgery",
+                "price": 0,
+                "availability": true
+            },
+            {
+                "name": "OPD Consultation",
+                "price": 0,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 8,
+            "estimatedResponseTime": "8 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-247-6789",
+            "email": "info@aiimsbhubaneswar.edu.in"
+        },
+        "address": "Sijua, Patrapada, Bhubaneswar, Odisha 751019",
+        "waitTime": "25 mins",
+        "isGovernment": true,
+        "certifications": [
+            "JCI"
+        ]
+    },
+    {
+        "id": "H005",
+        "name": "CARE Hospitals",
+        "latitude": 20.3241,
+        "longitude": 85.8182,
+        "imageUrl": "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.6,
+        "specialties": [
+            "Cardiology",
+            "Orthopedics",
+            "Gastroenterology"
+        ],
+        "bedAvailability": {
+            "general": 150,
+            "icu": 30,
+            "ventilators": 10
+        },
+        "services": [
+            {
+                "name": "Knee Replacement",
+                "price": 15000,
+                "availability": true
+            },
+            {
+                "name": "Cardiac Checkup",
+                "price": 1000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 3,
+            "estimatedResponseTime": "12 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "HDFC Ergo"
+        ],
+        "contact": {
+            "phone": "+91-674-616-5656",
+            "email": "info@carehospitals.com"
+        },
+        "address": "Unit No. 42, Plot No. 324, Prachi Enclave Rd, Chandrasekharpur, Bhubaneswar, Odisha 751016",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H006",
+        "name": "Kalinga Hospital Limited",
+        "latitude": 20.325,
+        "longitude": 85.817,
+        "imageUrl": "https://placehold.co/1000x800",
+        "rating": 4.4,
+        "specialties": [
+            "Nephrology",
+            "Urology",
+            "Orthopedics"
+        ],
+        "bedAvailability": {
+            "general": 200,
+            "icu": 25,
+            "ventilators": 12
+        },
+        "services": [
+            {
+                "name": "Dialysis",
+                "price": 1800,
+                "availability": true
+            },
+            {
+                "name": "Kidney Transplant",
+                "price": 30000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 4,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Max Bupa"
+        ],
+        "contact": {
+            "phone": "+91-674-230-0570",
+            "email": "info@kalingahospital.com"
+        },
+        "address": "Chandrasekharpur, Bhubaneswar, Odisha 751023",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H007",
+        "name": "AMRI Hospitals",
+        "latitude": 20.2578,
+        "longitude": 85.7794,
+        "imageUrl": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.5,
+        "specialties": [
+            "Cardiology",
+            "Neurology",
+            "Oncology"
+        ],
+        "bedAvailability": {
+            "general": 180,
+            "icu": 35,
+            "ventilators": 15
+        },
+        "services": [
+            {
+                "name": "Cancer Surgery",
+                "price": 22000,
+                "availability": true
+            },
+            {
+                "name": "Neurology Checkup",
+                "price": 700,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 3,
+            "estimatedResponseTime": "10 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Tata AIG"
+        ],
+        "contact": {
+            "phone": "+91-674-666-6600",
+            "email": "info@amrihospitals.in"
+        },
+        "address": "Plot No. 1, Near Jayadev Vatika Park, Khandagiri, Bhubaneswar, Odisha 751019",
+        "waitTime": "18 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H008",
+        "name": "Capital Hospital",
+        "latitude": 20.2765,
+        "longitude": 85.8438,
+        "imageUrl": "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.0,
+        "specialties": [
+            "General Medicine",
+            "Pediatrics",
+            "Surgery"
+        ],
+        "bedAvailability": {
+            "general": 400,
+            "icu": 50,
+            "ventilators": 20
+        },
+        "services": [
+            {
+                "name": "General Consultation",
+                "price": 0,
+                "availability": true
+            },
+            {
+                "name": "Emergency Care",
+                "price": 0,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 6,
+            "estimatedResponseTime": "10 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-239-1985",
+            "email": "capitalhospital@gmail.com"
+        },
+        "address": "Unit 6, Udyan Marg, Ganga Nagar, Bhubaneswar, Odisha 751001",
+        "waitTime": "30 mins",
+        "isGovernment": true,
+        "certifications": []
+    },
+    {
+        "id": "H009",
+        "name": "Hi-Tech Medical College & Hospital",
+        "latitude": 20.3056,
+        "longitude": 85.8542,
+        "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.3,
+        "specialties": [
+            "Orthopedics",
+            "Cardiology",
+            "Neurology"
+        ],
+        "bedAvailability": {
+            "general": 250,
+            "icu": 40,
+            "ventilators": 15
+        },
+        "services": [
+            {
+                "name": "Hip Replacement",
+                "price": 18000,
+                "availability": true
+            },
+            {
+                "name": "Cardiac Surgery",
+                "price": 25000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 4,
+            "estimatedResponseTime": "12 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "SBI Health"
+        ],
+        "contact": {
+            "phone": "+91-674-237-1406",
+            "email": "info@hitechmedical.org"
+        },
+        "address": "Pandara, Rasulgarh, Bhubaneswar, Odisha 751025",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H010",
+        "name": "Sparsh Hospital & Critical Care Pvt Ltd",
+        "latitude": 20.2912,
+        "longitude": 85.8456,
+        "imageUrl": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.2,
+        "specialties": [
+            "Critical Care",
+            "Cardiology",
+            "Neurology"
+        ],
+        "bedAvailability": {
+            "general": 100,
+            "icu": 20,
+            "ventilators": 8
+        },
+        "services": [
+            {
+                "name": "ICU Care",
+                "price": 5000,
+                "availability": true
+            },
+            {
+                "name": "General Consultation",
+                "price": 400,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Bajaj Allianz"
+        ],
+        "contact": {
+            "phone": "+91-674-254-0188",
+            "email": "info@sparshhospital.com"
+        },
+        "address": "A/407, Sahid Nagar, Behind Metro Tower, Bhubaneswar, Odisha 751007",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H011",
+        "name": "Vivekanand Hospital",
+        "latitude": 20.2508,
+        "longitude": 85.8364,
+        "imageUrl": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.1,
+        "specialties": [
+            "General Medicine",
+            "Orthopedics",
+            "Pediatrics"
+        ],
+        "bedAvailability": {
+            "general": 80,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "General Surgery",
+                "price": 8000,
+                "availability": true
+            },
+            {
+                "name": "OPD Consultation",
+                "price": 300,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-909-009-9402",
+            "email": "vivekanandhospital@gmail.com"
+        },
+        "address": "A-54/1, A-54/2 Binalipi Bhawan, Baramunda Colony, Bhubaneswar, Odisha 751003",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H012",
+        "name": "L V Prasad Eye Institute",
+        "latitude": 20.352,
+        "longitude": 85.816,
+        "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.7,
+        "specialties": [
+            "Ophthalmology"
+        ],
+        "bedAvailability": {
+            "general": 50,
+            "icu": 5,
+            "ventilators": 2
+        },
+        "services": [
+            {
+                "name": "Cataract Surgery",
+                "price": 10000,
+                "availability": true
+            },
+            {
+                "name": "Eye Checkup",
+                "price": 500,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": false,
+            "ambulanceCount": 0,
+            "estimatedResponseTime": "N/A"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "National Insurance"
+        ],
+        "contact": {
+            "phone": "+91-674-398-9202",
+            "email": "info@lvpei.org"
+        },
+        "address": "Plot No. 347, Chandaka Industrial Estate, Patia, Bhubaneswar, Odisha 751024",
+        "waitTime": "10 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H013",
+        "name": "KAR Clinic & Hospital Pvt Ltd",
+        "latitude": 20.275,
+        "longitude": 85.842,
+        "imageUrl": "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.0,
+        "specialties": [
+            "General Medicine",
+            "Surgery"
+        ],
+        "bedAvailability": {
+            "general": 60,
+            "icu": 10,
+            "ventilators": 3
+        },
+        "services": [
+            {
+                "name": "General Surgery",
+                "price": 7000,
+                "availability": true
+            },
+            {
+                "name": "Consultation",
+                "price": 350,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 1,
+            "estimatedResponseTime": "20 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-943-718-9396",
+            "email": "karclinic@gmail.com"
+        },
+        "address": "A/32, Unit 4, Kharvel Nagar, Near Rabindra Mandap, Bhubaneswar, Odisha 751001",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H014",
+        "name": "Ayush Hospitals",
+        "latitude": 20.296,
+        "longitude": 85.824,
+        "imageUrl": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.3,
+        "specialties": [
+            "Critical Care",
+            "Cardiology",
+            "Orthopedics"
+        ],
+        "bedAvailability": {
+            "general": 120,
+            "icu": 25,
+            "ventilators": 10
+        },
+        "services": [
+            {
+                "name": "ICU Care",
+                "price": 6000,
+                "availability": true
+            },
+            {
+                "name": "Orthopedic Surgery",
+                "price": 12000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 3,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Oriental Insurance"
+        ],
+        "contact": {
+            "phone": "+91-977-664-9443",
+            "email": "info@ayushhospitals.com"
+        },
+        "address": "Plot No. 13 & 14, N.H. 5, Near Acharya Vihar Square, Bhubaneswar, Odisha 751013",
+        "waitTime": "18 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H015",
+        "name": "Jagannath Hospital",
+        "latitude": 20.2915,
+        "longitude": 85.845,
+        "imageUrl": "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.1,
+        "specialties": [
+            "General Medicine",
+            "Surgery"
+        ],
+        "bedAvailability": {
+            "general": 70,
+            "icu": 10,
+            "ventilators": 4
+        },
+        "services": [
+            {
+                "name": "General Surgery",
+                "price": 8000,
+                "availability": true
+            },
+            {
+                "name": "Consultation",
+                "price": 300,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-254-5575",
+            "email": "jagannathhospital@gmail.com"
+        },
+        "address": "Sahid Nagar, Bhubaneswar, Odisha 751007",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H016",
+        "name": "Neelachal Hospital Pvt Ltd",
+        "latitude": 20.2755,
+        "longitude": 85.8425,
+        "imageUrl": "https://placehold.co/1000x800",
+        "rating": 4.2,
+        "specialties": [
+            "Nephrology",
+            "Urology",
+            "General Medicine"
+        ],
+        "bedAvailability": {
+            "general": 90,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Dialysis",
+                "price": 2000,
+                "availability": true
+            },
+            {
+                "name": "Urology Consultation",
+                "price": 400,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-943-700-0672",
+            "email": "neelachalhospital@gmail.com"
+        },
+        "address": "A/84, Unit 3, Market Complex, Kharvel Nagar, Bhubaneswar, Odisha 751001",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H017",
+        "name": "Usthi Hospital & Research Center",
+        "latitude": 20.299,
+        "longitude": 85.805,
+        "imageUrl": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.0,
+        "specialties": [
+            "General Medicine",
+            "Surgery"
+        ],
+        "bedAvailability": {
+            "general": 60,
+            "icu": 10,
+            "ventilators": 3
+        },
+        "services": [
+            {
+                "name": "General Surgery",
+                "price": 7000,
+                "availability": true
+            },
+            {
+                "name": "Consultation",
+                "price": 350,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 1,
+            "estimatedResponseTime": "20 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-943-705-6711",
+            "email": "usthihospital@gmail.com"
+        },
+        "address": "N 4 1/1, IRC Village, Nayapalli, Bhubaneswar, Odisha 751012",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H018",
+        "name": "Shree Hospitals",
+        "latitude": 20.279,
+        "longitude": 85.859,
+        "imageUrl": "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.1,
+        "specialties": [
+            "Orthopedics",
+            "General Medicine"
+        ],
+        "bedAvailability": {
+            "general": 80,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Orthopedic Surgery",
+                "price": 12000,
+                "availability": true
+            },
+            {
+                "name": "Consultation",
+                "price": 300,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-254-6575",
+            "email": "shreehospitals@gmail.com"
+        },
+        "address": "246, Lewis Road, Bhubaneswar, Odisha 751014",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H019",
+        "name": "Kar Vision Eye Hospital",
+        "latitude": 20.291,
+        "longitude": 85.846,
+        "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.4,
+        "specialties": [
+            "Ophthalmology"
+        ],
+        "bedAvailability": {
+            "general": 40,
+            "icu": 5,
+            "ventilators": 2
+        },
+        "services": [
+            {
+                "name": "Cataract Surgery",
+                "price": 9000,
+                "availability": true
+            },
+            {
+                "name": "Eye Checkup",
+                "price": 400,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": false,
+            "ambulanceCount": 0,
+            "estimatedResponseTime": "N/A"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-909-029-7197",
+            "email": "karvision@gmail.com"
+        },
+        "address": "Plot No. 10, Kali Mandir Lane, Sahid Nagar, Bhubaneswar, Odisha 751007",
+        "waitTime": "10 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H020",
+        "name": "IMS & Sum Hospital",
+        "latitude": 20.246,
+        "longitude": 85.785,
+        "imageUrl": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.5,
+        "specialties": [
+            "Cardiology",
+            "Neurology",
+            "Oncology",
+            "Pediatrics"
+        ],
+        "bedAvailability": {
+            "general": 300,
+            "icu": 50,
+            "ventilators": 20
+        },
+        "services": [
+            {
+                "name": "Cardiac Surgery",
+                "price": 20000,
+                "availability": true
+            },
+            {
+                "name": "Oncology Consultation",
+                "price": 600,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 5,
+            "estimatedResponseTime": "10 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "United India"
+        ],
+        "contact": {
+            "phone": "+91-738-104-0000",
+            "email": "info@ims.ac.in"
+        },
+        "address": "Kalinga Nagar, Near Sampur, Bhubaneswar, Odisha 751003",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H021",
+        "name": "Bagchi Sri Shankara Cancer Centre and Research Institute",
+        "latitude": 20.3525,
+        "longitude": 85.82,
+        "imageUrl": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.6,
+        "specialties": [
+            "Oncology"
+        ],
+        "bedAvailability": {
+            "general": 100,
+            "icu": 20,
+            "ventilators": 10
+        },
+        "services": [
+            {
+                "name": "Chemotherapy",
+                "price": 15000,
+                "availability": true
+            },
+            {
+                "name": "Cancer Screening",
+                "price": 1000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 3,
+            "estimatedResponseTime": "12 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Religare Health"
+        ],
+        "contact": {
+            "phone": "+91-674-255-5555",
+            "email": "info@bagchicancer.org"
+        },
+        "address": "Info Valley, Bhubaneswar, Odisha 751024",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H022",
+        "name": "Health Village Hospital",
+        "latitude": 20.3,
+        "longitude": 85.8055,
+        "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.3,
+        "specialties": [
+            "Nephrology",
+            "Urology",
+            "Cardiology"
+        ],
+        "bedAvailability": {
+            "general": 60,
+            "icu": 10,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Dialysis",
+                "price": 2000,
+                "availability": true
+            },
+            {
+                "name": "Cardiac Checkup",
+                "price": 800,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-666-1234",
+            "email": "info@healthvillagehospital.com"
+        },
+        "address": "15/1, Civic Centre, IRC Village, Nayapalli, Bhubaneswar, Odisha 751015",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H023",
+        "name": "Oasis Fertility",
+        "latitude": 20.2965,
+        "longitude": 85.8245,
+        "imageUrl": "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.4,
+        "specialties": [
+            "Infertility"
+        ],
+        "bedAvailability": {
+            "general": 30,
+            "icu": 5,
+            "ventilators": 2
+        },
+        "services": [
+            {
+                "name": "IVF Treatment",
+                "price": 150000,
+                "availability": true
+            },
+            {
+                "name": "Fertility Consultation",
+                "price": 1000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": false,
+            "ambulanceCount": 0,
+            "estimatedResponseTime": "N/A"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-666-7777",
+            "email": "info@oasisfertility.com"
+        },
+        "address": "Plot No. N-2/39, IRC Village, Jaydev Vihar, Bhubaneswar, Odisha 751013",
+        "waitTime": "10 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H024",
+        "name": "Odisha Comprehensive Cancer Center",
+        "latitude": 20.3245,
+        "longitude": 85.818,
+        "imageUrl": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.5,
+        "specialties": [
+            "Oncology"
+        ],
+        "bedAvailability": {
+            "general": 80,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Radiation Therapy",
+                "price": 20000,
+                "availability": true
+            },
+            {
+                "name": "Cancer Screening",
+                "price": 1200,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Star Health"
+        ],
+        "contact": {
+            "phone": "+91-674-255-6666",
+            "email": "info@odishacancer.org"
+        },
+        "address": "Plot No. 329/1929(P), Chandrasekharpur, Bhubaneswar, Odisha 751016",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H025",
+        "name": "Aditya Ashwini Hospital",
+        "latitude": 20.325,
+        "longitude": 85.8175,
+        "imageUrl": "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.2,
+        "specialties": [
+            "General Medicine",
+            "Surgery",
+            "Pediatrics"
+        ],
+        "bedAvailability": {
+            "general": 100,
+            "icu": 20,
+            "ventilators": 8
+        },
+        "services": [
+            {
+                "name": "General Surgery",
+                "price": 9000,
+                "availability": true
+            },
+            {
+                "name": "Pediatric Consultation",
+                "price": 400,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-8888",
+            "email": "info@adityaashwini.com"
+        },
+        "address": "Plot No. 329, Near Chandrasekharpur Police Station, Bhubaneswar, Odisha 751016",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H026",
+        "name": "Bhubaneswar City Hospital",
+        "latitude": 20.275,
+        "longitude": 85.842,
+        "imageUrl": "https://placehold.co/1000x800",
+        "rating": 4.0,
+        "specialties": [
+            "General Medicine",
+            "Surgery"
+        ],
+        "bedAvailability": {
+            "general": 70,
+            "icu": 10,
+            "ventilators": 4
+        },
+        "services": [
+            {
+                "name": "General Surgery",
+                "price": 8000,
+                "availability": true
+            },
+            {
+                "name": "Consultation",
+                "price": 300,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-9999",
+            "email": "info@bhubaneswarcityhospital.com"
+        },
+        "address": "Plot No. 112, Unit 4, Bhubaneswar, Odisha 751001",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H027",
+        "name": "Sai Krishna Hospital",
+        "latitude": 20.257,
+        "longitude": 85.779,
+        "imageUrl": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.1,
+        "specialties": [
+            "Cardiology",
+            "Orthopedics"
+        ],
+        "bedAvailability": {
+            "general": 90,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Cardiac Checkup",
+                "price": 1000,
+                "availability": true
+            },
+            {
+                "name": "Orthopedic Surgery",
+                "price": 12000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-7777",
+            "email": "info@saikrishnahospital.com"
+        },
+        "address": "Plot No. 45, Khandagiri Square, Bhubaneswar, Odisha 751030",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H028",
+        "name": "Medicare Multispeciality Hospital",
+        "latitude": 20.305,
+        "longitude": 85.854,
+        "imageUrl": "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.2,
+        "specialties": [
+            "Cardiology",
+            "Neurology",
+            "Orthopedics"
+        ],
+        "bedAvailability": {
+            "general": 120,
+            "icu": 20,
+            "ventilators": 8
+        },
+        "services": [
+            {
+                "name": "Neurology Consultation",
+                "price": 600,
+                "availability": true
+            },
+            {
+                "name": "Cardiac Surgery",
+                "price": 20000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 3,
+            "estimatedResponseTime": "12 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "ICICI Lombard"
+        ],
+        "contact": {
+            "phone": "+91-674-255-6666",
+            "email": "info@medicarehospital.com"
+        },
+        "address": "Plot No. 78, Rasulgarh, Bhubaneswar, Odisha 751010",
+        "waitTime": "18 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H029",
+        "name": "Sunrise Hospital",
+        "latitude": 20.352,
+        "longitude": 85.819,
+        "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.0,
+        "specialties": [
+            "General Medicine",
+            "Pediatrics"
+        ],
+        "bedAvailability": {
+            "general": 60,
+            "icu": 10,
+            "ventilators": 3
+        },
+        "services": [
+            {
+                "name": "Pediatric Consultation",
+                "price": 400,
+                "availability": true
+            },
+            {
+                "name": "General Surgery",
+                "price": 8000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 1,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-5555",
+            "email": "info@sunrisehospital.com"
+        },
+        "address": "Plot No. 15, Patia Road, Bhubaneswar, Odisha 751024",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H030",
+        "name": "Prachi Healthcare Center",
+        "latitude": 20.326,
+        "longitude": 85.8165,
+        "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.1,
+        "specialties": [
+            "General Medicine",
+            "Orthopedics"
+        ],
+        "bedAvailability": {
+            "general": 80,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Orthopedic Surgery",
+                "price": 12000,
+                "availability": true
+            },
+            {
+                "name": "Consultation",
+                "price": 300,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-4444",
+            "email": "info@prachihealthcare.com"
+        },
+        "address": "Plot No. 22, Niladri Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751021",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H031",
+        "name": "Lotus Hospital",
+        "latitude": 20.291,
+        "longitude": 85.8455,
+        "imageUrl": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.2,
+        "specialties": [
+            "Cardiology",
+            "General Medicine"
+        ],
+        "bedAvailability": {
+            "general": 90,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Cardiac Checkup",
+                "price": 1000,
+                "availability": true
+            },
+            {
+                "name": "General Surgery",
+                "price": 9000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-3333",
+            "email": "info@lotushospital.com"
+        },
+        "address": "Plot No. 89, Saheed Nagar, Bhubaneswar, Odisha 751007",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H032",
+        "name": "Narayana Multispeciality Hospital",
+        "latitude": 20.2505,
+        "longitude": 85.836,
+        "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.3,
+        "specialties": [
+            "Cardiology",
+            "Neurology",
+            "Orthopedics"
+        ],
+        "bedAvailability": {
+            "general": 120,
+            "icu": 20,
+            "ventilators": 8
+        },
+        "services": [
+            {
+                "name": "Neurology Consultation",
+                "price": 600,
+                "availability": true
+            },
+            {
+                "name": "Cardiac Surgery",
+                "price": 20000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 3,
+            "estimatedResponseTime": "12 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "HDFC Ergo"
+        ],
+        "contact": {
+            "phone": "+91-674-255-2222",
+            "email": "info@narayanahospital.com"
+        },
+        "address": "Plot No. 34, Baramunda, Bhubaneswar, Odisha 751003",
+        "waitTime": "18 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H033",
+        "name": "Green Valley Hospital",
+        "latitude": 20.296,
+        "longitude": 85.824,
+        "imageUrl": "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.1,
+        "specialties": [
+            "General Medicine",
+            "Pediatrics"
+        ],
+        "bedAvailability": {
+            "general": 70,
+            "icu": 10,
+            "ventilators": 4
+        },
+        "services": [
+            {
+                "name": "Pediatric Consultation",
+                "price": 400,
+                "availability": true
+            },
+            {
+                "name": "General Surgery",
+                "price": 8000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-1111",
+            "email": "info@greenvalleyhospital.com"
+        },
+        "address": "Plot No. 56, Jaydev Vihar, Bhubaneswar, Odisha 751013",
+        "waitTime": "20 mins",
+        "isGovernment": false,
+        "certifications": []
+    },
+    {
+        "id": "H034",
+        "name": "Odisha Heart Institute",
+        "latitude": 20.2465,
+        "longitude": 85.7855,
+        "imageUrl": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.4,
+        "specialties": [
+            "Cardiology"
+        ],
+        "bedAvailability": {
+            "general": 60,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Cardiac Surgery",
+                "price": 20000,
+                "availability": true
+            },
+            {
+                "name": "Cardiac Checkup",
+                "price": 1000,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "12 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat",
+            "Tata AIG"
+        ],
+        "contact": {
+            "phone": "+91-674-255-0000",
+            "email": "info@odishaheartinstitute.com"
+        },
+        "address": "Plot No. 101, Kalinga Nagar, Bhubaneswar, Odisha 751003",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": [
+            "NABH"
+        ]
+    },
+    {
+        "id": "H035",
+        "name": "Shanti Memorial Hospital",
+        "latitude": 20.2755,
+        "longitude": 85.8425,
+        "imageUrl": "https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?q=80&w=1000&auto=format&fit=crop",
+        "rating": 4.2,
+        "specialties": [
+            "General Medicine",
+            "Orthopedics"
+        ],
+        "bedAvailability": {
+            "general": 80,
+            "icu": 15,
+            "ventilators": 5
+        },
+        "services": [
+            {
+                "name": "Orthopedic Surgery",
+                "price": 12000,
+                "availability": true
+            },
+            {
+                "name": "Consultation",
+                "price": 300,
+                "availability": true
+            }
+        ],
+        "emergencyServices": {
+            "available": true,
+            "ambulanceCount": 2,
+            "estimatedResponseTime": "15 mins"
+        },
+        "insuranceAccepted": [
+            "Ayushman Bharat"
+        ],
+        "contact": {
+            "phone": "+91-674-255-9999",
+            "email": "info@shantimemorial.com"
+        },
+        "address": "Plot No. 12, Unit 3, Kharvel Nagar, Bhubaneswar, Odisha 751001",
+        "waitTime": "15 mins",
+        "isGovernment": false,
+        "certifications": []
+    }
+]

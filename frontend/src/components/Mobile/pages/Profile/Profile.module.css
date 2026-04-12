@@ -1,0 +1,360 @@
+.container {
+  padding: 20px 15px 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px; /* Default for mobile */
+  margin: 0 auto;
+  background: #f5f7fa;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Ensure scrolling for long content */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #89c467;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #44f490;
+  transition: transform 0.3s ease;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  padding: 0 10px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #757575;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+
+.infoGrid,
+.settingsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.infoCard {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.iconContainer {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.iconContainer:hover {
+  transform: scale(1.1);
+}
+
+.infoIcon {
+  color: #757575;
+  width: 35px;
+  height: 35px;
+}
+
+.infoContent {
+  flex: 1;
+}
+
+.infoTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+.infoSubtitle {
+  color: #757575;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.editButton:hover {
+  color: #2980b9;
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.settingsCard {
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settingsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.settingsIconContainer {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.settingsIconContainer:hover {
+  transform: scale(1.1);
+}
+
+.settingsIcon {
+  width: 35px;
+  height: 35px;
+}
+
+.settingsTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Tablet View (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .infoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+    gap: 15px;
+  }
+
+  .settingsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+    gap: 15px;
+  }
+
+  .infoCard,
+  .settingsCard {
+    padding: 20px;
+  }
+
+  .infoTitle {
+    font-size: 1.1rem;
+  }
+
+  .infoSubtitle {
+    font-size: 1rem;
+  }
+
+  .editButton {
+    font-size: 1rem;
+  }
+
+  .settingsTitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop View (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px; /* Wider container for desktop */
+    padding: 40px 30px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .infoGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 20px;
+  }
+
+  .settingsGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 20px;
+  }
+
+  .infoCard,
+  .settingsCard {
+    padding: 25px;
+  }
+
+  .iconContainer,
+  .settingsIconContainer {
+    padding: 10px;
+  }
+
+  .infoIcon,
+  .settingsIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .infoTitle {
+    font-size: 1.2rem;
+  }
+
+  .infoSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .editButton {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+  }
+
+  .settingsTitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile View (up to 480px) - Already defined, keeping as is */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 10px 60px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+
+  .infoCard,
+  .settingsCard {
+    padding: 12px;
+  }
+
+  .infoIcon,
+  .settingsIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .infoTitle {
+    font-size: 0.9rem;
+  }
+
+  .infoSubtitle {
+    font-size: 0.8rem;
+  }
+
+  .editButton {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .settingsTitle {
+    font-size: 0.9rem;
+  }
+}

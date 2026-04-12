@@ -1,0 +1,313 @@
+.navBarContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(450deg, #f3dcdc, #c9d4e6); /* Gradient for a classy look */
+  box-shadow: 0 -4px 20px rgba(30, 19, 87, 0.15); /* Material elevation shadow */
+  z-index: 1000;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Subtle top border for elegance */
+  backdrop-filter: blur(10px); /* Frosted glass effect for modernity */
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
+}
+
+/* Navigation Item Styling */
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px 0;
+  width: 20%;
+  color: #7f8c8d; /* Subtle gray for unselected items, classic touch */
+  transition: all 0.3s ease; /* Smooth transitions for material design */
+  position: relative;
+}
+
+/* Center SuuSri Button (Floating Circle) */
+.navItem:nth-child(3) {
+  position: absolute;
+  top: -30px; /* Higher elevation for floating effect */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient for SuuSri */
+  border-radius: 50%;
+  padding: 16px;
+  width: 60px; /* Larger circular button */
+  height: 60px; /* Larger circular button */
+  box-shadow: 0 8px 20px rgba(155, 89, 182, 0.4); /* Material elevation shadow */
+  border: 2px solid #fff; /* White border for elegance */
+  z-index: 1001; /* Ensure it stays on top */
+}
+
+.navItem:nth-child(3):hover {
+  background: linear-gradient(45deg, #8e44ad, #9b59b6); /* Gradient shift on hover */
+  box-shadow: 0 10px 25px rgba(155, 89, 182, 0.6);
+}
+
+/* SuuSri Icon and Label Styling */
+.navItem:nth-child(3) .navIcon {
+  color: #fff; /* White icon for contrast */
+  width: 24px;
+  height: 24px;
+}
+
+.navItem:nth-child(3) .navLabel {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Playfair Display", serif; /* Classic serif font */
+  margin-top: 8px; /* More spacing for elegance */
+}
+
+/* Selected State and Hover Effects */
+.selected {
+  color: #9b59b6; /* Vibrant purple for selected state, classic yet modern */
+  font-weight: 600;
+}
+
+.selected::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #9b59b6; /* Triangle indicator for material design */
+  transition: all 0.3s ease;
+}
+
+.navItem:hover:not(.selected):not(:nth-child(3)) {
+  color: #8e44ad; /* Slightly lighter purple on hover, classic touch */
+  background: rgba(155, 89, 182, 0.05); /* Subtle background highlight */
+  border-radius: 8px; /* Rounded corners for material design */
+}
+
+/* Icon Styling */
+.navIcon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth icon animations */
+  font-family: "Montserrat", sans-serif; /* Modern sans-serif for icons */
+}
+
+.selected .navIcon {
+  transform: scale(1.1); /* Slight scale on selection for material effect */
+}
+
+/* Label Styling */
+.navLabel {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif; /* Classic serif for labels */
+  transition: color 0.3s ease;
+}
+
+/* Ensure no tab is highlighted when selectedIndex is -1 */
+.navItem:not(.selected):not(:nth-child(3)) {
+  color: #7f8c8d; /* Default color for unselected items */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .navBarContainer {
+    height: 70px;
+  }
+
+  .navBar {
+    padding: 0 5px;
+  }
+
+  .navItem {
+    padding: 6px 0;
+    width: 18%;
+  }
+
+  .navItem:nth-child(3) {
+    top: -25px;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .navIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navLabel {
+    font-size: 10px;
+  }
+}.navBarContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, #ffffff, #f5f7fa); /* Gradient for a classy look */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15); /* Material elevation shadow */
+    z-index: 1000;
+    border-top: 1px solid rgba(0, 0, 0, 0.05); /* Subtle top border for elegance */
+    backdrop-filter: blur(10px); /* Frosted glass effect for modernity */
+  }
+  
+  .navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+  }
+  
+  /* Navigation Item Styling */
+  .navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px 0;
+    width: 20%;
+    color: #7f8c8d; /* Subtle gray for unselected items, classic touch */
+    transition: all 0.3s ease; /* Smooth transitions for material design */
+    position: relative;
+  }
+  
+  /* Center SuuSri Button (Floating Circle) */
+  .navItem:nth-child(3) {
+    position: absolute;
+    top: -30px; /* Higher elevation for floating effect */
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #9b59b6, #8e44ad); /* Purple gradient for SuuSri */
+    border-radius: 50%;
+    padding: 16px;
+    width: 60px; /* Larger circular button */
+    height: 60px; /* Larger circular button */
+    box-shadow: 0 8px 20px rgba(155, 89, 182, 0.4); /* Material elevation shadow */
+    border: 2px solid #fff; /* White border for elegance */
+    z-index: 1001; /* Ensure it stays on top */
+  }
+  
+  .navItem:nth-child(3):hover {
+    background: linear-gradient(45deg, #8e44ad, #9b59b6); /* Gradient shift on hover */
+    box-shadow: 0 10px 25px rgba(155, 89, 182, 0.6);
+  }
+  
+  /* SuuSri Icon and Label Styling */
+  .navItem:nth-child(3) .navIcon {
+    color: #fff; /* White icon for contrast */
+    width: 24px;
+    height: 24px;
+  }
+  
+  .navItem:nth-child(3) .navLabel {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif; /* Classic serif font */
+    margin-top: 8px; /* More spacing for elegance */
+  }
+  
+  /* Selected State and Hover Effects */
+  .selected {
+    color: #9b59b6; /* Vibrant purple for selected state, classic yet modern */
+    font-weight: 600;
+  }
+  
+  .selected::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #9b59b6; /* Triangle indicator for material design */
+    transition: all 0.3s ease;
+  }
+  
+  .navItem:hover:not(.selected):not(:nth-child(3)) {
+    color: #8e44ad; /* Slightly lighter purple on hover, classic touch */
+    background: rgba(155, 89, 182, 0.05); /* Subtle background highlight */
+    border-radius: 8px; /* Rounded corners for material design */
+  }
+  
+  /* Icon Styling */
+  .navIcon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth icon animations */
+    font-family: "Montserrat", sans-serif; /* Modern sans-serif for icons */
+  }
+  
+  .selected .navIcon {
+    transform: scale(1.1); /* Slight scale on selection for material effect */
+  }
+  
+  /* Label Styling */
+  .navLabel {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif; /* Classic serif for labels */
+    transition: color 0.3s ease;
+  }
+  
+  /* Ensure no tab is highlighted when selectedIndex is -1 */
+  .navItem:not(.selected):not(:nth-child(3)) {
+    color: #7f8c8d; /* Default color for unselected items */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .navBarContainer {
+      height: 70px;
+    }
+  
+    .navBar {
+      padding: 0 5px;
+    }
+  
+    .navItem {
+      padding: 6px 0;
+      width: 18%;
+    }
+  
+    .navItem:nth-child(3) {
+      top: -25px;
+      padding: 12px;
+      width: 50px;
+      height: 50px;
+    }
+  
+    .navIcon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .navLabel {
+      font-size: 10px;
+    }
+  }

@@ -1,0 +1,368 @@
+/* PatientsData.module.css */
+
+.formContainer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f7b8b0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.formSection {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background-color: #90bdeb;
+    border-radius: 8px;
+    border: 2px solid #0b5298;
+    position: relative;
+}
+
+.sectionTitle {
+    color: #5f2adb;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 5px solid #dadbda;
+}
+
+.sectionDescription {
+    color: #ad878c;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+    margin-bottom: 1.5rem;
+}
+
+.inputLabel {
+    display: block;
+    color: #b41dd6;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.inputLabel span {
+    color: #e63946;
+    margin-left: 0.25rem;
+}
+
+.textInput,
+.selectInput,
+textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #218909;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #1717e6;
+    font-size: 1rem;
+    background-color: #edefdf;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-sizing: border-box;
+}
+
+.textInput:focus,
+.selectInput:focus,
+textarea:focus {
+    border-color: #48cae4;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 202, 228, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.radioGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+}
+
+.radioOption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 0.9rem;
+    background: #ffffff;
+    border: 2px solid #5c7d9f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 100px;
+}
+
+.radioOption:hover {
+    border-color: #48cae4;
+    background-color: #f8f9fa;
+}
+
+.radioOption input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+.checkboxGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.checkboxOption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: #ffffff;
+    border: 2px solid #5c7d9f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.checkboxOption:hover {
+    border-color: #48cae4;
+    background-color: #f8f9fa;
+}
+
+/* Custom File Input Styling */
+.fileInputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.fileInput {
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.fileInputLabel {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+.fileInputWrapper:hover .fileInputLabel {
+    border-color: #48cae4;
+    background-color: #ffffff;
+}
+
+.fileName {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+    word-break: break-all;
+    display: block;
+}
+
+.formActions {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.submitButton {
+    background-color: #48cae4;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+    background-color: #00b4d8;
+}
+
+/* Conditional Sections */
+.conditionalSection {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+/* Error States */
+.error {
+    color: #e63946;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.errorInput {
+    border-color: #e63946 !important;
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+/* Placeholder Styling */
+.textInput::placeholder,
+textarea::placeholder,
+.selectInput::placeholder {
+    color: #adb5bd;
+    font-style: italic;
+}
+
+/* Input Specific Adjustments */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Clearfix for Overlap Prevention */
+.formSection::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Specific Styling for Lifestyle Section and Sleep Hours */
+.lifestyleSection .formGrid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+}
+
+.lifestyleSection .radioGroup {
+    gap: 1rem;
+}
+
+.lifestyleSection .radioOption {
+    min-width: 100px;
+    padding: 0.65rem 0.9rem;
+}
+
+.lifestyleSection .inputGroup.sleepHours {
+    margin-bottom: 2rem; /* Increased spacing below Sleep Hours */
+}
+
+.lifestyleSection .inputGroup.occupation {
+    margin-top: 1.5rem; /* Increased spacing above Occupation */
+}
+
+/* Adjust Sleep Hours Input for Alignment */
+.lifestyleSection .textInput {
+    height: 48px; /* Match height of radio options for alignment */
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .formSection {
+        padding: 1.5rem;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .radioGroup {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .checkboxGroup {
+        grid-template-columns: 1fr;
+    }
+
+    .lifestyleSection .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .lifestyleSection .inputGroup.sleepHours {
+        margin-bottom: 1.5rem;
+    }
+
+    .lifestyleSection .inputGroup.occupation {
+        margin-top: 1rem;
+    }
+
+    .formActions {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .textInput,
+    .selectInput,
+    textarea {
+        padding: 0.65rem 0.9rem;
+        font-size: 0.9rem;
+    }
+
+    .submitButton {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .fileInputLabel {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .formActions {
+        margin-top: 1.5rem;
+    }
+
+    .lifestyleSection .radioOption {
+        min-width: auto;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .lifestyleSection .textInput {
+        height: 40px; /* Adjust height for smaller screens */
+    }
+}

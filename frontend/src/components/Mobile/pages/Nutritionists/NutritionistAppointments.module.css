@@ -1,0 +1,230 @@
+.container {
+    padding: 20px 15px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #f5f7fa;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .greeting {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .appointmentsSection {
+    margin: 20px 0;
+  }
+  
+  .appointmentsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .appointmentCard {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .appointmentCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .appointmentDetails h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .appointmentDetails p {
+    font-size: 0.9rem;
+    color: #34495e;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .appointmentDetails p strong {
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  
+  .cancelButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .cancelButton:hover {
+    transform: scale(1.1);
+    color: #c0392b;
+  }
+  
+  .cancelButton:focus {
+    outline: none;
+  }
+  
+  .backButtonContainer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .backButton {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .backButton:hover {
+    transform: scale(1.05);
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+  }
+  
+  .popupContent {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .popupTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .popupDetail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #34495e;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .popupDetail span:first-child {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .popupButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .closeButton {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .closeButton:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px 10px 60px;
+      max-width: 100%;
+    }
+  
+    .greeting {
+      font-size: 1.5rem;
+    }
+  
+    .appointmentDetails h3 {
+      font-size: 1rem;
+    }
+  
+    .appointmentDetails p {
+      font-size: 0.8rem;
+    }
+  
+    .appointmentCard {
+      padding: 12px;
+    }
+  
+    .backButton {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .popupContent {
+      width: 85%;
+      padding: 15px;
+    }
+  
+    .popupTitle {
+      font-size: 1.2rem;
+    }
+  
+    .popupDetail {
+      font-size: 0.8rem;
+    }
+  
+    .closeButton {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }

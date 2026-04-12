@@ -1,0 +1,667 @@
+/* Ambulance.module.css */
+
+.stylishContainer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #e6f7e9, #f1f8e9); /* Gradient light green background */
+    min-height: 100vh;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 1;
+    padding-bottom: 80px;
+  }
+  
+  .stylishContent {
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(39, 174, 96, 0.1); /* Green shadow */
+    border: 2px solid #d4edda; /* Light green border */
+    animation: fadeInUp 1.5s ease-out;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .sectionTitle {
+    color: #2d6a4f; /* Deep forest green */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  .ambulanceForm {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 50;
+  }
+  
+  .inputField {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #fff, #f5f7fa);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d4edda; /* Light green border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .inputField:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .inputIcon {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #2d6a4f; /* Deep forest green */
+    font-size: 1.2rem;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d4edda; /* Light green border */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: "Georgia", serif;
+    background: #fff;
+    color: #4a7f5e; /* Muted green */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #27ae60; /* Bright green */
+    box-shadow: 0 0 5px #27ae60;
+  }
+  
+  .react-select-container .react-select__control {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    min-height: 40px;
+    z-index: 1000;
+  }
+  
+  .react-select-container .react-select__value-container {
+    padding: 0 !important;
+  }
+  
+  .react-select-container .react-select__menu {
+    z-index: 999999 !important;
+    position: fixed !important;
+    top: "auto" !important;
+    left: "auto" !important;
+    width: 100% !important;
+    max-width: 480px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    background: #fff !important;
+    border: 1px solid #d4edda !important; /* Light green border */
+  }
+  
+  .react-select-container .react-select__option {
+    font-family: "Georgia", serif;
+    color: #4a7f5e; /* Muted green */
+  }
+  
+  .react-select-container .react-select__option--is-focused {
+    background: #27ae60 !important; /* Bright green */
+    color: #fff !important;
+  }
+  
+  .react-select-container .react-select__single-value {
+    color: #4a7f5e; /* Muted green */
+    font-family: "Georgia", serif;
+  }
+  
+  .actionButton {
+    background: linear-gradient(45deg, #27ae60, #2ecc71); /* Green gradient */
+    color: #fff;
+    border: 2px solid #d4edda; /* Light green border */
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: "Georgia", serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+    margin-top: 10px;
+    z-index: 60;
+  }
+  
+  .actionButton:hover {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .pinButton {
+    background: linear-gradient(45deg, #27ae60, #2ecc71); /* Green gradient */
+    color: #fff;
+    border: 2px solid #d4edda; /* Light green border */
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "Georgia", serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    z-index: 60;
+  }
+  
+  .pinButton:hover {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cancelButton {
+    background: #f44336; /* Red for cancel */
+    color: #fff;
+    border: 2px solid #f44336;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "Georgia", serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cancelButton:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .buttonIcon {
+    margin-right: 8px;
+  }
+  
+  .emergencyNotification {
+    padding: 20px;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9); /* Light green gradient */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(39, 174, 96, 0.1); /* Green shadow */
+    border: 2px solid #4caf50; /* Green border */
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .notificationTitle {
+    color: #2d6a4f; /* Deep forest green */
+    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #2d6a4f; /* Deep forest green */
+    font-size: 1.2rem;
+  }
+  
+  .mapContainer {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(39, 174, 96, 0.1); /* Green shadow */
+    animation: zoomIn 1.5s ease-out;
+    z-index: 15;
+  }
+  
+  .stylishMap {
+    border: 2px solid #d4edda; /* Light green border */
+  }
+  
+  .stylishPopup {
+    font-family: "Georgia", serif;
+    color: #4a7f5e; /* Muted green */
+    background: #fff;
+    border: 2px solid #d4edda; /* Light green border */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .hospitalSection {
+    padding: 15px;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9); /* Light green gradient */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(39, 174, 96, 0.1); /* Green shadow */
+    border: 2px solid #4caf50; /* Green border */
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-out;
+  }
+  
+  .sectionSubtitle {
+    color: #2d6a4f; /* Deep forest green */
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .privacySettings {
+    padding: 15px;
+    background: linear-gradient(135deg, #f1f8e9, #e6f7e9); /* Very light green gradient */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(39, 174, 96, 0.1); /* Green shadow */
+    border: 2px solid #d4edda; /* Light green border */
+    margin-bottom: 20px;
+    animation: slideInRight 1s ease-out;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #4a7f5e; /* Muted green */
+    font-size: 1rem;
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .privacyText {
+    font-size: 0.9rem;
+    color: #4a7f5e; /* Muted green */
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .stylishModalContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(39, 174, 96, 0.1); /* Green shadow */
+    border: 2px solid #d4edda; /* Light green border */
+    width: 90%;
+    max-width: 400px;
+    animation: fadeInUp 1.5s ease-out;
+    z-index: 1005;
+  }
+  
+  .modalTitle {
+    color: #2d6a4f; /* Deep forest green */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modalButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(39, 174, 96, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(39, 174, 96, 0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stylishContainer {
+      padding: 15px 10px;
+      max-width: 100%;
+      padding-bottom: 60px;
+    }
+  
+    .stylishContent {
+      padding: 15px;
+    }
+  
+    .sectionTitle {
+      font-size: 1.4rem;
+    }
+  
+    .ambulanceForm,
+    .inputField {
+      gap: 10px;
+    }
+  
+    .input {
+      padding: 8px 10px;
+      font-size: 0.9rem;
+      border-radius: 6px;
+    }
+  
+    .actionButton,
+    .pinButton,
+    .cancelButton {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .icon {
+      font-size: 1rem;
+    }
+  
+    .emergencyNotification,
+    .hospitalSection,
+    .privacySettings {
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .notificationTitle,
+    .sectionSubtitle {
+      font-size: 1.2rem;
+    }
+  
+    .modalTitle {
+      font-size: 1.2rem;
+    }
+  
+    .mapContainer {
+      height: 200px;
+    }
+  }
+
+
+  
+/* Add to Ambulance.module.css */
+
+.sosButton {
+    background: linear-gradient(45deg, #f44336, #d32f2f); /* Red gradient for urgency */
+    color: #fff;
+    border: 2px solid #d32f2f;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: "Georgia", serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+    z-index: 60;
+  }
+  
+  .sosButton:hover {
+    background: linear-gradient(45deg, #d32f2f, #f44336);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .filterButtons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filterButton {
+    background: linear-gradient(45deg, #27ae60, #2ecc71); /* Green gradient */
+    color: #fff;
+    border: 2px solid #d4edda;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "Georgia", serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filterButton:hover {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .filterButton.active {
+    background: linear-gradient(45deg, #4caf50, #2ecc71);
+    border-color: #4caf50;
+  }
+  
+  .filterButton.active:hover {
+    background: linear-gradient(45deg, #2ecc71, #4caf50);
+  }
+
+/* Status Timeline Styles */
+.statusTimeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+}
+
+.statusStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    z-index: 2;
+}
+
+.stepDot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.statusStep span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #95a5a6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.statusStep.completed .stepDot {
+    background: #27ae60;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.4);
+}
+
+.statusStep.completed span {
+    color: #27ae60;
+}
+
+.statusLine {
+    flex: 1;
+    height: 3px;
+    background: #e0e0e0;
+    margin: 0 -5px;
+    margin-top: -18px;
+    z-index: 1;
+}
+
+.activeLine {
+    background: #27ae60;
+}
+
+/* Tracking Info Cards */
+.trackingInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.infoCard {
+    background: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #d4edda;
+}
+
+.infoIcon {
+    color: #27ae60;
+    background: #e8f5e9;
+    padding: 6px;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.infoCard label {
+    display: block;
+    font-size: 10px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+.infoCard strong {
+    display: block;
+    font-size: 13px;
+    color: #2c3e50;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Tracking Buttons */
+.callButton {
+    flex: 1;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cancelBookingButton {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cancelBookingButton:hover {
+    background: #f5c6cb;
+}

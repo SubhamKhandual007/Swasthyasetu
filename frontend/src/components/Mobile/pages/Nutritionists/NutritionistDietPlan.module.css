@@ -1,0 +1,443 @@
+.container {
+    padding: 20px 15px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #f5f7fa;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .greeting {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .imageSection {
+    margin-bottom: 20px;
+  }
+  
+  .nutritionImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .labsSection {
+    margin: 20px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .labsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .labCard {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .labCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .iconContainer {
+    background-color: rgba(155, 89, 182, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .purpleIcon {
+    color: #9b59b6;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .mealHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .mealName {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2c3e50;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .calories {
+    font-size: 0.8rem;
+    color: #3498db;
+  }
+  
+  .schedule {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .restricted {
+    font-size: 0.7rem;
+    color: #e74c3c;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .recommendationCard {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommendationCard ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .recommendationCard li {
+    font-size: 0.9rem;
+    color: #34495e;
+    margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .trackingSection {
+    margin: 20px 0;
+  }
+  
+  .subTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .trackingGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .trackingCard {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trackingCard p {
+    font-size: 0.9rem;
+    color: #34495e;
+    margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .alert {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .waterButton,
+  .reportButton {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .waterButton:hover,
+  .reportButton:hover {
+    transform: scale(1.05);
+  }
+  
+  .activitySelect,
+  .moodSelect {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    color: #34495e;
+  }
+  
+  .globalActions {
+    margin: 20px 0;
+  }
+  
+  .globalTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .actionButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .consultButton,
+  .groceryButton,
+  .deliveryButton {
+    flex: 1;
+    background: linear-gradient(45deg, #9b59b6, #e74c3c);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .consultButton:hover,
+  .groceryButton:hover,
+  .deliveryButton:hover {
+    transform: scale(1.05);
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+  }
+  
+  .popupContent {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popupTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .popupDetail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #34495e;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .popupDetail span:first-child {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .popupButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .swapButton,
+  .closeButton {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .swapButton {
+    background: linear-gradient(45deg, #27ae60, #2ecc71);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .closeButton {
+    background: #e74c3c;
+    color: #fff;
+  }
+  
+  .swapButton:hover,
+  .closeButton:hover {
+    transform: scale(1.05);
+  }
+  
+  .reminder {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .popupLabel {
+    font-size: 0.9rem;
+    color: #2c3e50;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px 10px 60px;
+      max-width: 100%;
+    }
+  
+    .greeting {
+      font-size: 1.5rem;
+    }
+  
+    .nutritionImage {
+      height: 150px;
+    }
+  
+    .sectionTitle,
+    .subTitle,
+    .globalTitle {
+      font-size: 1.2rem;
+    }
+  
+    .labsGrid,
+    .trackingGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    .labCard,
+    .trackingCard {
+      padding: 12px;
+    }
+  
+    .mealName {
+      font-size: 0.9rem;
+    }
+  
+    .calories,
+    .schedule,
+    .restricted {
+      font-size: 0.7rem;
+    }
+  
+    .trackingCard p,
+    .recommendationCard li,
+    .popupDetail,
+    .reminder {
+      font-size: 0.8rem;
+    }
+  
+    .waterButton,
+    .reportButton,
+    .consultButton,
+    .groceryButton,
+    .deliveryButton,
+    .swapButton,
+    .closeButton {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  
+    .activitySelect,
+    .moodSelect {
+      font-size: 0.7rem;
+      padding: 6px;
+    }
+  }
+
+  .nutritionistImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }

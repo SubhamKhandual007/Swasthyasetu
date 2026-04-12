@@ -1,0 +1,176 @@
+/* CSS Variables for Themes */
+:root {
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --accent-blue: #1b558b;
+  --accent-soft-blue: rgba(27, 85, 139, 0.1);
+}
+
+.dashboardWrapper {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.dashboardHeader {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--accent-blue);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .featureGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .featureGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.featureCard {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  height: 100%;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.featureIcon {
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  margin: 0;
+}
+
+.featureDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  min-height: 2.8rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.featureCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.goBtn {
+  width: 100%;
+  padding: 0.875rem;
+  background: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+.goBtn:hover {
+  background: #15436d;
+}
+
+.goBtn:active {
+  transform: scale(0.98);
+}
+
+.placeholderImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #94a3b8;
+  gap: 0.5rem;
+}
+
+.placeholderIcon {
+  opacity: 0.5;
+}
+
+/* Sidebar and Layout Integration */
+@media (min-width: 1024px) {
+  .dashboardWrapper {
+    display: flex;
+  }
+  .mainContent {
+    flex: 1;
+    padding: 2rem;
+  }
+}

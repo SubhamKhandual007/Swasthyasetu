@@ -1,0 +1,74 @@
+.container {
+    padding: 20px 15px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background: #f5f7fa;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .greeting {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .pharmacyName {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .pharmacyRating {
+    color: #3498db;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .starIcon {
+    color: #f1c40f;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px 10px 60px;
+      max-width: 100%;
+    }
+  
+    .greeting {
+      font-size: 1.5rem;
+    }
+  
+    .pharmacyName {
+      font-size: 0.9rem;
+    }
+  
+    .pharmacyRating {
+      font-size: 0.7rem;
+    }
+  
+    .starIcon {
+      width: 14px;
+      height: 14px;
+    }
+  }

@@ -1,0 +1,350 @@
+/* EHRData.module.css */
+
+.ehrContainer {
+    padding: 20px 15px 80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #e6f7e9, #f1f8e9); /* Gradient light green background */
+    min-height: 100vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Inter", sans-serif;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    border: 2px solid #d4edda; /* Slightly bolder light green border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d6a4f; /* Deep forest green */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(to right, #27ae60, #2ecc71); /* Classic green gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .card {
+    background: #e8f5e9; /* Soft green background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 2px solid #d4edda; /* Light green border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link {
+    color: #27ae60; /* Bright green for links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #2ecc71;
+    text-decoration: underline;
+  }
+  
+  .recommendations {
+    list-style: none;
+    padding: 0;
+    color: #4a7f5e; /* Muted green */
+  }
+  
+  .recommendationItem {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f1f8e9; /* Very light green background */
+    border-radius: 8px;
+    border: 1px solid #d4edda;
+    transition: background 0.3s ease;
+  }
+  
+  .recommendationItem:hover {
+    background: #e6f7e9;
+  }
+  
+  /* Specific Styling for "Upload & Share Medical Reports" Section */
+  .sectionTitle.uploadShareTitle {
+    color: #2d6a4f; /* Deep forest green for consistency */
+  }
+  
+  .card.uploadShareCard {
+    background: #e8f5e9; /* Soft green background */
+    border-radius: 15px; /* Rounded corners to match screenshot */
+    padding: 15px;
+    border: 2px solid #d4edda; /* Light green border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .uploadInput.uploadShareInput {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #b0bec5; /* Light gray border for input */
+    border-radius: 5px; /* Rounded corners for input */
+    background: #ffffff; /* White background */
+    font-size: 1rem;
+    width: 100%; /* Full width for mobile */
+    text-align: center; /* Center "No file chosen" text */
+    transition: border-color 0.3s ease;
+  }
+  
+  .uploadInput.uploadShareInput:focus {
+    border-color: #27ae60; /* Bright green on focus */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+  }
+  
+  .input.uploadShareInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b0bec5; /* Light gray border for input */
+    border-radius: 5px; /* Rounded corners for input */
+    background: #ffffff; /* White background */
+    font-size: 1rem;
+    text-align: center; /* Center placeholder text */
+    transition: border-color 0.3s ease;
+  }
+  
+  .input.uploadShareInput:focus {
+    border-color: #27ae60; /* Bright green on focus */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+  }
+  
+  .downloadButton.uploadShareButton {
+    background: #27ae60; /* Solid bright green for button */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px; /* Rounded corners for button */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Full width for mobile */
+    margin-top: 15px;
+  }
+  
+  .downloadButton.uploadShareButton:hover {
+    background: #2ecc71; /* Lighter green on hover */
+    transform: scale(1.05);
+  }
+  
+  .uploadText,
+  .shareText {
+    font-size: 1rem;
+    color: #4a7f5e; /* Muted green */
+    margin-top: 10px;
+    padding: 8px;
+    background: #f1f8e9; /* Very light green background */
+    border-radius: 8px;
+    border: 1px solid #d4edda;
+    text-align: center; /* Center text */
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #4a7f5e;
+    font-size: 1rem;
+  }
+  
+  .loading,
+  .error,
+  .noData {
+    text-align: center;
+    padding: 20px;
+    color: #2d6a4f;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .error {
+    color: #e67e22; /* Orange for errors */
+    background: #fef3e7;
+    border-radius: 10px;
+    border: 2px solid #fbd38d;
+    padding: 15px;
+  }
+  
+  .summaryText {
+    font-size: 1rem;
+    color: #4a7f5e;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f1f8e9;
+    border-radius: 10px;
+    border: 1px solid #d4edda;
+    transition: background 0.3s ease;
+  }
+  
+  .summaryText:hover {
+    background: #e6f7e9;
+  }
+  
+  .insightText {
+    font-size: 1rem;
+    color: #4a7f5e;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f1f8e9;
+    border-radius: 8px;
+    border: 1px solid #d4edda;
+    transition: background 0.3s ease;
+  }
+  
+  .insightText:hover {
+    background: #e6f7e9;
+  }
+  
+  .privacyText {
+    font-size: 1rem;
+    color: #4a7f5e;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .profileGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .dataItem {
+    background: #e8f5e9; /* Soft green background */
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 2px solid #d4edda; /* Light green border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    color: #2d6a4f;
+  }
+  
+  .dataItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid #d4edda;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2d6a4f;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .select:focus {
+    border-color: #27ae60;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+  }
+  
+  /* Mobile View Fixes for Overlay Issue */
+  @media (max-width: 768px) {
+    .ehrContainer {
+      padding: 15px 10px 60px;
+      max-width: 100%;
+      overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+  
+    .section {
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+  
+    .sectionTitle {
+      font-size: 1.4rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .card.uploadShareCard {
+      padding: 10px; /* Reduced padding for mobile */
+    }
+  
+    .uploadInput.uploadShareInput,
+    .input.uploadShareInput,
+    .downloadButton.uploadShareButton {
+      width: 100%; /* Ensure full width on mobile */
+      margin: 0 auto; /* Center align */
+      display: block; /* Ensure block-level for proper stacking */
+    }
+  
+    .uploadText,
+    .shareText {
+      width: 100%; /* Full width for mobile */
+      margin: 5px auto; /* Center and reduce margin */
+    }
+  
+    .downloadButton.uploadShareButton {
+      margin-top: 10px; /* Reduced margin for mobile */
+    }
+  
+    .summaryText,
+    .insightText,
+    .uploadText,
+    .shareText,
+    .privacyText,
+    .dataItem {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .recommendationItem {
+      padding: 6px;
+    }
+  }

@@ -1,0 +1,465 @@
+/* DoctorsData.module.css */
+
+/* Form container */
+.formContainer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Form section */
+.formSection {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #0288d1;
+    position: relative;
+}
+
+/* Section title */
+.sectionTitle {
+    color: #01579b;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 4px solid #4fc3f7;
+}
+
+/* Form grid layout */
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Input group */
+.inputGroup {
+    margin-bottom: 1.5rem;
+}
+
+/* Input label */
+.inputLabel {
+    display: block;
+    color: #0277bd;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.inputLabel span {
+    color: #d32f2f;
+    margin-left: 0.25rem;
+}
+
+/* Text inputs, selects, and textareas */
+.textInput,
+.selectInput,
+textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #90a4ae;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #263238;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Larger inputs for Clinic/Hospital */
+.clinicInput {
+    font-size: 1.1rem;
+    padding: 1rem;
+    height: 50px;
+}
+
+.clinicTextarea {
+    font-size: 1.1rem;
+    padding: 1rem;
+    min-height: 120px;
+}
+
+.textInput:focus,
+.selectInput:focus,
+textarea:focus {
+    border-color: #0288d1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(2, 136, 209, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Radio group */
+.radioGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+}
+
+/* Radio option */
+.radioOption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 0.9rem;
+    background: #ffffff;
+    border: 2px solid #90a4ae;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 100px;
+}
+
+.radioOption:hover {
+    border-color: #0288d1;
+    background-color: #e3f2fd;
+}
+
+.radioOption input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+/* Checkbox group */
+.checkboxGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Checkbox option */
+.checkboxOption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: #ffffff;
+    border: 2px solid #90a4ae;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.checkboxOption:hover {
+    border-color: #0288d1;
+    background-color: #e3f2fd;
+}
+
+/* Custom File Input Styling */
+.fileInputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.fileInput {
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px dashed #90a4ae;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.fileInputLabel {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px dashed #90a4ae;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    color: #455a64;
+}
+
+.fileInputWrapper:hover .fileInputLabel {
+    border-color: #0288d1;
+    background-color: #ffffff;
+}
+
+.fileName {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #607d8b;
+    word-break: break-all;
+    display: block;
+}
+
+/* Profile Photo and Signature Preview */
+.profilePhotoPreview,
+.signaturePreview {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.profilePhotoPreview img,
+.signaturePreview img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #90a4ae;
+}
+
+/* Confirmation Button */
+.confirmButton,
+.confirmedText {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.confirmButton {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.confirmButton:hover {
+    background-color: #43a047;
+}
+
+.confirmedText {
+    color: #4caf50;
+}
+
+/* Note for file uploads */
+.note {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #78909c;
+}
+
+/* Form actions (submit button) */
+.formActions {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* Submit button */
+.submitButton {
+    background-color: #0288d1;
+    color: #ffffff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+    background-color: #0277bd;
+}
+
+/* Add Button */
+.addButton {
+    margin-top: 0.75rem;
+    padding: 0.65rem 1.5rem;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+    background-color: #43a047;
+}
+
+/* Remove Button */
+.removeButton {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.removeButton:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+.removeButton:hover:not(:disabled) {
+    background-color: #b71c1c;
+}
+
+/* Dynamic Entry (for degrees, clinics, etc.) */
+.dynamicEntry {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Schedule Entry */
+.scheduleEntry {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+
+/* Conditional sections */
+.conditionalSection {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Error states */
+.error {
+    color: #d32f2f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.errorInput {
+    border-color: #d32f2f !important;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+
+/* Placeholder styling */
+.textInput::placeholder,
+textarea::placeholder,
+.selectInput::placeholder {
+    color: #90a4ae;
+    font-style: italic;
+}
+
+/* Input specific adjustments */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Clearfix for overlap prevention */
+.formSection::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .formSection {
+        padding: 1.5rem;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .radioGroup {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .checkboxGroup {
+        grid-template-columns: 1fr;
+    }
+
+    .formActions {
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .dynamicEntry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clinicInput,
+    .clinicTextarea {
+        font-size: 1rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .textInput,
+    .selectInput,
+    textarea {
+        padding: 0.65rem 0.9rem;
+        font-size: 0.9rem;
+    }
+
+    .submitButton,
+    .addButton {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .fileInputLabel {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .formActions {
+        margin-top: 1.5rem;
+    }
+
+    .radioOption {
+        min-width: auto;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .textInput {
+        height: 40px;
+    }
+}

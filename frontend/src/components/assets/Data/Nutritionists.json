@@ -1,0 +1,96 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Sarah Lee",
+      "specialty": "Diabetes Management",
+      "experience": "12 years",
+      "rating": 4.9,
+      "availability": {
+        "online": true,
+        "offline": true,
+        "onlineSlots": [
+          { "date": "2025-03-09", "time": "9:00 AM - 12:00 PM" },
+          { "date": "2025-03-09", "time": "1:00 PM - 4:00 PM" },
+          { "date": "2025-03-10", "time": "5:00 PM - 8:00 PM" }
+        ],
+        "offlineSlots": [
+          { "date": "2025-03-09", "time": "10:00 AM - 1:00 PM" },
+          { "date": "2025-03-10", "time": "2:00 PM - 5:00 PM" }
+        ]
+      },
+      "location": {
+        "address": "Bhubaneswar, Odisha",
+        "latitude": 20.333,
+        "longitude": 85.821
+      },
+      "contact": {
+        "email": "sarahlee@example.com",
+        "phone": "+91-9876543210"
+      },
+      "fees": {
+        "online": 800,
+        "offline": 1200
+      },
+      "imageUrl": "https://example.com/images/sarahlee.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Brown",
+      "specialty": "Weight Loss",
+      "experience": "8 years",
+      "rating": 4.6,
+      "availability": {
+        "online": true,
+        "offline": false,
+        "onlineSlots": [
+          { "date": "2025-03-09", "time": "11:00 AM - 2:00 PM" },
+          { "date": "2025-03-10", "time": "3:00 PM - 6:00 PM" }
+        ],
+        "offlineSlots": []
+      },
+      "location": {
+        "address": "Patia, Bhubaneswar",
+        "latitude": 20.354,
+        "longitude": 85.822
+      },
+      "contact": {
+        "email": "michaelbrown@example.com",
+        "phone": "+91-9876543211"
+      },
+      "fees": {
+        "online": 600,
+        "offline": 0
+      },
+      "imageUrl": "https://example.com/images/michaelbrown.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Priya Sharma",
+      "specialty": "Anemia & Vegan Diets",
+      "experience": "10 years",
+      "rating": 4.8,
+      "availability": {
+        "online": false,
+        "offline": true,
+        "onlineSlots": [],
+        "offlineSlots": [
+          { "date": "2025-03-09", "time": "9:00 AM - 12:00 PM" },
+          { "date": "2025-03-10", "time": "1:00 PM - 4:00 PM" }
+        ]
+      },
+      "location": {
+        "address": "Infocity, Bhubaneswar",
+        "latitude": 20.334,
+        "longitude": 85.810
+      },
+      "contact": {
+        "email": "priyasharma@example.com",
+        "phone": "+91-9876543212"
+      },
+      "fees": {
+        "online": 0,
+        "offline": 1000
+      },
+      "imageUrl": "https://example.com/images/priyasharma.jpg"
+    }
+  ]
