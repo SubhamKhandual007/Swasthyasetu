@@ -145,6 +145,8 @@ const EHRHealthData = ({ patientId }) => {
         <p style="margin-bottom: 10px;">
           <strong>Patient Overview:</strong> ${patientData.name}, a ${patientData.gender.toLowerCase()}, born on ${formatDate(patientData.dob)} (Age: ${calculateAge(patientData.dob)}), with blood group ${patientData.bloodType}. 
           Current vitals include weight: ${patientData.weight} kg, height: ${patientData.height} cm, blood pressure: ${patientData.bloodPressure || "Not recorded"}.
+          Total blood donations: ${patientData.totalDonations || 0}, with the last donation on ${formatDate(patientData.lastDonationDate)}. 
+          Eligibility for donation: ${patientData.eligibleForDonation ? "Yes" : "No"}.
         </p>
         ${
           patientData.chronicConditions?.length > 0 || patientData.familyHistory?.length > 0
@@ -249,6 +251,9 @@ const EHRHealthData = ({ patientId }) => {
           {patientData.name}, born on {formatDate(patientData.dob)}, is a {patientData.gender.toLowerCase()} with a {patientData.bloodType} blood group, currently listed as {patientData.occupation ? `a ${patientData.occupation.toLowerCase()}` : "having no specified occupation"}. 
           Being {calculateAge(patientData.dob)} years old, they have donated blood {patientData.totalDonations} time(s), with the last donation on {formatDate(patientData.lastDonationDate)}, and {patientData.eligibleForDonation ? "remain eligible" : "are not eligible"} for future donations. 
           Their recorded weight is {patientData.weight} kg, height is {patientData.height} cm, and blood pressure is {patientData.bloodPressure || "not specified"}.
+          {patientData.weight && patientData.height && (
+            <span> Body Mass Index (BMI): {((patientData.weight / (patientData.height / 100) ** 2)).toFixed(1)}.</span>
+          )}
           {patientData.chronicConditions?.length > 0 && ` They have a history of ${patientData.chronicConditions.join(", ").toLowerCase()} as chronic condition(s).`} 
           {patientData.familyHistory?.length > 0 && ` Their family history includes a risk of ${patientData.familyHistory.join(", ").toLowerCase()}.`}
         </p>
@@ -290,6 +295,7 @@ const EHRHealthData = ({ patientId }) => {
           <div className={styles.dataItem}><strong>Blood Pressure:</strong> {patientData.bloodPressure || "N/A"}</div>
           <div className={styles.dataItem}><strong>Weight:</strong> {patientData.weight} kg</div>
           <div className={styles.dataItem}><strong>Height:</strong> {patientData.height} cm</div>
+          <div className={styles.dataItem}><strong>BMI:</strong> {patientData.weight && patientData.height ? (patientData.weight / (patientData.height / 100) ** 2).toFixed(1) : "N/A"}</div>
         </div>
       </div>
 

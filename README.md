@@ -6,6 +6,7 @@
 
 - **Blood Donation**: Find nearby blood donation centers, track donations, and receive blood on time.
 - **Consultation with Experts**: Connect with doctors and healthcare providers online for consultations.
+- **Susri Healthcare Chatbot**: An advanced AI-powered assistant providing rapid first aid guidance and instant medical consultations.
 - **AI Doctor Assistance**: Use AI-powered tools to get medical advice based on symptoms or conditions.
 - **Medicine Shop**: Browse a range of medicines and order them conveniently from online pharmacies.
 

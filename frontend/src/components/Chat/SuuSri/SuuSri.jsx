@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from "../../../apiConfig";
 import styles from "./SuuSri.module.css";
 import Picker from "emoji-picker-react";
 import suusriAvatar from "../../../assets/suusri_avatar.png";
@@ -93,14 +94,29 @@ const Chat = () => {
       };
     }
 
-    // Add null check for synth before accessing onvoiceschanged
     const synth = window.speechSynthesis;
     if (synth) {
       synth.onvoiceschanged = () => {
         console.log("Voices loaded:", synth.getVoices());
       };
     }
+
+    // Fetch real EHR data
+    const fetchEHRData = async () => {
+      try {
+        const patientId = "67ccc44c671f5aa635f458e1"; // Hardcoded patient ID from routes.js
+        const response = await fetch(`${API_BASE_URL}/api/patients/${patientId}`);
+        if (!response.ok) throw new Error("Failed to fetch patient records");
+        const data = await response.json();
+        setDynamicEhrData(data);
+      } catch (err) {
+        console.error("Error fetching dynamic EHR data:", err);
+      }
+    };
+    fetchEHRData();
   }, []);
+
+  const [dynamicEhrData, setDynamicEhrData] = useState(null);
 
   // Subham's EHR Data
   const ehrData = {
@@ -175,7 +191,7 @@ const Chat = () => {
       7. Be tolerant of mixed language inputs
       
       **User's EHR Data:**
-      ${JSON.stringify(ehrData, null, 2)}
+      ${JSON.stringify(dynamicEhrData || ehrData, null, 2)}
       
       Instructions:
       - Use the EHR data to provide personalized health suggestions based on the user's medical history, lifestyle, and family history.
