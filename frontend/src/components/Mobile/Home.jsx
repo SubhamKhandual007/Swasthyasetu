@@ -90,6 +90,8 @@ const Home = () => {
                 src={usericon} 
                 alt="User" 
                 onClick={() => navigateTo("/profile")}
+                fetchpriority="high"
+                decoding="async"
               />
           </div>
         </div>
@@ -140,7 +142,7 @@ const Home = () => {
           {doctors.map((doctor, index) => (
             <div key={index} className={styles.doctorCard}>
               <div className={styles.doctorAvatar}>
-                <img src={doctor.img} alt={doctor.name} />
+                <img src={doctor.img} alt={doctor.name} loading="lazy" decoding="async" />
               </div>
               <h3 className={styles.doctorName}>{doctor.name}</h3>
               <p className={styles.doctorSpecialty}>{doctor.specialization}</p>

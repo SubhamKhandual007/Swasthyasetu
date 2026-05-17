@@ -15,6 +15,8 @@ function Authpage() {
                 src="https://th.bing.com/th/id/OIP.WNQzMWB6nZi_uYlSNxL5SQHaE8?rs=1&pid=ImgDetMain"
                 className="img-fluid h-100 w-100 object-fit-cover"
                 alt="User Registration"
+                fetchpriority="high"
+                decoding="async"
               />
             </div>
             <div className="card-body d-flex flex-column justify-content-center align-items-center">
@@ -37,6 +39,8 @@ function Authpage() {
                 src="https://static.vecteezy.com/system/resources/previews/002/952/463/large_2x/doctor-holding-touching-hands-asian-senior-or-elderly-old-lady-woman-patient-with-love-care-helping-encourage-and-empathy-at-nursing-hospital-ward-healthy-strong-medical-concept-free-photo.jpg"
                 className="img-fluid h-100 w-100 object-fit-cover"
                 alt="Doctor Registration"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="card-body d-flex flex-column justify-content-center align-items-center">
@@ -59,6 +63,8 @@ function Authpage() {
                 src={adminLoginImg}
                 className="img-fluid h-100 w-100 object-fit-cover"
                 alt="Admin Login"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="card-body d-flex flex-column justify-content-center align-items-center">

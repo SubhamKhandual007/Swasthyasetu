@@ -1,78 +1,87 @@
 import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import ChatBot from './Chat/Chatbot';
-import Chat from './Chat/SuuSri/SuuSri';
-import AdminDashboard from './AdminDashboard/AdminDashboard';
-import AdminLogin from './AdminDashboard/AdminLogin';
-import AdminAuthOptions from './AdminDashboard/AdminAuthOptions';
-import AdminRegister from './AdminDashboard/AdminRegister';
-import DoctorsData from './DoctorsData/DoctorsData';
-import Accidents from './Doctorspecificscreen/Accidents';
-import DrBloodDonation from './Doctorspecificscreen/BloodDonation';
-import DrBloodrequests from './Doctorspecificscreen/DrBloodRequests';
-import AccidentDetection from './Features/AccidentDetection';
-import BloodDonation from './Features/BloodDonation';
-import FetchDonors from "./Features/FetchDonors";
-import FetchRequest from './Features/Fetchrequest';
-import MedicineStore from './Map/MedicineStore';
-import Home from './Mobile/Home';
-import NavBar from './Mobile/NavBar';
-import AccidentAlert from './Mobile/pages/Accident/AccidentAlert';
-import Ambulance from './Mobile/pages/Ambulance/Ambulance';
-import BloodDonateReceive from './Mobile/pages/BloodDonateReceive/BloodDonateReceive';
-import AllLabs from './Mobile/pages/BloodTest/AllLabs';
-import BloodTest from './Mobile/pages/BloodTest/BloodTest';
-import CheckReport from './Mobile/pages/BloodTest/CheckReport';
-import DownloadReport from './Mobile/pages/BloodTest/DownloadReport';
-import FollowUp from './Mobile/pages/BloodTest/FollowUp';
-import TrackOrder from './Mobile/pages/BloodTest/TrackOrder';
-import Nutrition from './Mobile/pages/DietChart/Nutrition';
-import Doctors from './Mobile/pages/Doctors/Doctors';
-import EHRHealthData from './Mobile/pages/EHRData/EHRHealthData';
-import NotFound from './Mobile/pages/Error/404';
-import AllHospitals from './Mobile/pages/Hospitals/AllHospitals';
-// import AppointmentDetails from './Mobile/pages/Hospitals/AppointmentDetails';
-import VideoCall from './Features/VideoConsultation';
-import Billing from './Mobile/pages/Hospitals/Billing';
-import EmergencyServices from './Mobile/pages/Hospitals/EmergencyServices';
-import HospitalDashboard from './Mobile/pages/Hospitals/Hospital';
-import MedicalRecords from './Mobile/pages/Hospitals/MedicalRecords';
-import AllMedicineStore from './Mobile/pages/MedicineStore/AllMedicineStore';
-import Medicine from './Mobile/pages/MedicineStore/Medicine';
-import MedicineAll from './Mobile/pages/MedicineStore/MedicineAll';
-import MedicineStorePage from './Medicines/MedicineStore';
-import CartPage from './Medicines/CartPage';
-import Checkout from './Medicines/Checkout';
-import OrderConfirmation from './Medicines/OrderConfirmation';
-import OrderHistory from './Medicines/OrderHistory';
-import ManageMedicines from './AdminDashboard/ManageMedicines';
-import Profile from './Mobile/pages/Profile/Profile';
-import Notifications from './Mobile/pages/Notifications/Notifications';
-import Welcome from './Mobile/Welcome';
-import PatientsData from './Patientdata/PatientsData';
-import PatientProfile from './PatientProfile/PatientProfile';
-import Doctorheader from './RegisterasDoctor/Doctorheader';
-import DoctorLogin from './RegisterasDoctor/DoctorLogin';
-import DoctorRegister from './RegisterasDoctor/DoctorRegister';
-import Login from './RegisterasUser/Login';
-import Register from './RegisterasUser/Register';
-import RoleSelection from './RegisterasUser/RoleSelection';
-import Authpage from './Screens/Authpage';
-import Dashboard from './Screens/Dashboard';
-import Doctorpage from './Screens/Doctorpage';
-import Header from './Screens/Header';
-import AppointmentDetails from './Mobile/pages/Hospitals/AppointmentDetails';
-import NutritionistDietPlan from './Mobile/pages/Nutritionists/NutritionistDietPlan';
-import NutritionistAppointments from './Mobile/pages/Nutritionists/NutritionistAppointments';
-import EHRManagement from './AdminDashboard/EHRManagement';
-import MedicalHistory from './Mobile/pages/EHRData/MedicineHistory';
-import PublicTracker from './Public/PublicTracker';
+const { Suspense, lazy } = React;
+
+const ChatBot = lazy(() => import('./Chat/Chatbot'));
+const Chat = lazy(() => import('./Chat/SuuSri/SuuSri'));
+const AdminDashboard = lazy(() => import('./AdminDashboard/AdminDashboard'));
+const AdminLogin = lazy(() => import('./AdminDashboard/AdminLogin'));
+const AdminAuthOptions = lazy(() => import('./AdminDashboard/AdminAuthOptions'));
+const AdminRegister = lazy(() => import('./AdminDashboard/AdminRegister'));
+const DoctorsData = lazy(() => import('./DoctorsData/DoctorsData'));
+const Accidents = lazy(() => import('./Doctorspecificscreen/Accidents'));
+const DrBloodDonation = lazy(() => import('./Doctorspecificscreen/BloodDonation'));
+const DrBloodrequests = lazy(() => import('./Doctorspecificscreen/DrBloodRequests'));
+const AccidentDetection = lazy(() => import('./Features/AccidentDetection'));
+const BloodDonation = lazy(() => import('./Features/BloodDonation'));
+const FetchDonors = lazy(() => import("./Features/FetchDonors"));
+const FetchRequest = lazy(() => import('./Features/Fetchrequest'));
+const MedicineStore = lazy(() => import('./Map/MedicineStore'));
+const Home = lazy(() => import('./Mobile/Home'));
+const NavBar = lazy(() => import('./Mobile/NavBar'));
+const AccidentAlert = lazy(() => import('./Mobile/pages/Accident/AccidentAlert'));
+const Ambulance = lazy(() => import('./Mobile/pages/Ambulance/Ambulance'));
+const BloodDonateReceive = lazy(() => import('./Mobile/pages/BloodDonateReceive/BloodDonateReceive'));
+const AllLabs = lazy(() => import('./Mobile/pages/BloodTest/AllLabs'));
+const BloodTest = lazy(() => import('./Mobile/pages/BloodTest/BloodTest'));
+const CheckReport = lazy(() => import('./Mobile/pages/BloodTest/CheckReport'));
+const DownloadReport = lazy(() => import('./Mobile/pages/BloodTest/DownloadReport'));
+const FollowUp = lazy(() => import('./Mobile/pages/BloodTest/FollowUp'));
+const TrackOrder = lazy(() => import('./Mobile/pages/BloodTest/TrackOrder'));
+const Nutrition = lazy(() => import('./Mobile/pages/DietChart/Nutrition'));
+const Doctors = lazy(() => import('./Mobile/pages/Doctors/Doctors'));
+const EHRHealthData = lazy(() => import('./Mobile/pages/EHRData/EHRHealthData'));
+const NotFound = lazy(() => import('./Mobile/pages/Error/404'));
+const AllHospitals = lazy(() => import('./Mobile/pages/Hospitals/AllHospitals'));
+// const AppointmentDetails = lazy(() => import('./Mobile/pages/Hospitals/AppointmentDetails'));
+const VideoCall = lazy(() => import('./Features/VideoConsultation'));
+const Billing = lazy(() => import('./Mobile/pages/Hospitals/Billing'));
+const EmergencyServices = lazy(() => import('./Mobile/pages/Hospitals/EmergencyServices'));
+const HospitalDashboard = lazy(() => import('./Mobile/pages/Hospitals/Hospital'));
+const MedicalRecords = lazy(() => import('./Mobile/pages/Hospitals/MedicalRecords'));
+const AllMedicineStore = lazy(() => import('./Mobile/pages/MedicineStore/AllMedicineStore'));
+const Medicine = lazy(() => import('./Mobile/pages/MedicineStore/Medicine'));
+const MedicineAll = lazy(() => import('./Mobile/pages/MedicineStore/MedicineAll'));
+const MedicineStorePage = lazy(() => import('./Medicines/MedicineStore'));
+const CartPage = lazy(() => import('./Medicines/CartPage'));
+const Checkout = lazy(() => import('./Medicines/Checkout'));
+const OrderConfirmation = lazy(() => import('./Medicines/OrderConfirmation'));
+const OrderHistory = lazy(() => import('./Medicines/OrderHistory'));
+const ManageMedicines = lazy(() => import('./AdminDashboard/ManageMedicines'));
+const Profile = lazy(() => import('./Mobile/pages/Profile/Profile'));
+const Notifications = lazy(() => import('./Mobile/pages/Notifications/Notifications'));
+const Welcome = lazy(() => import('./Mobile/Welcome'));
+const PatientsData = lazy(() => import('./Patientdata/PatientsData'));
+const PatientProfile = lazy(() => import('./PatientProfile/PatientProfile'));
+const Doctorheader = lazy(() => import('./RegisterasDoctor/Doctorheader'));
+const DoctorLogin = lazy(() => import('./RegisterasDoctor/DoctorLogin'));
+const DoctorRegister = lazy(() => import('./RegisterasDoctor/DoctorRegister'));
+const Login = lazy(() => import('./RegisterasUser/Login'));
+const Register = lazy(() => import('./RegisterasUser/Register'));
+const RoleSelection = lazy(() => import('./RegisterasUser/RoleSelection'));
+const Authpage = lazy(() => import('./Screens/Authpage'));
+const Dashboard = lazy(() => import('./Screens/Dashboard'));
+const Doctorpage = lazy(() => import('./Screens/Doctorpage'));
+const Header = lazy(() => import('./Screens/Header'));
+const AppointmentDetails = lazy(() => import('./Mobile/pages/Hospitals/AppointmentDetails'));
+const NutritionistDietPlan = lazy(() => import('./Mobile/pages/Nutritionists/NutritionistDietPlan'));
+const NutritionistAppointments = lazy(() => import('./Mobile/pages/Nutritionists/NutritionistAppointments'));
+const EHRManagement = lazy(() => import('./AdminDashboard/EHRManagement'));
+const MedicalHistory = lazy(() => import('./Mobile/pages/EHRData/MedicineHistory'));
+const PublicTracker = lazy(() => import('./Public/PublicTracker'));
 
 function RoutesOfThePage() {
     return (
         <Router>
             <div className="App">
+                <Suspense fallback={
+                    <div className="d-flex justify-content-center align-items-center vh-100">
+                        <div className="spinner-border text-primary" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                }>
                 <Routes>
                     {/* Home and common header */}
                     <Route path='/Landingpage' element={<><Header /><Dashboard /></>} />
@@ -173,6 +182,7 @@ function RoutesOfThePage() {
                     <Route path='/notifications' element={<Notifications />} />
                     <Route path='/track/:token' element={<PublicTracker />} />
                 </Routes>
+                </Suspense>
             </div>
         </Router>
     );
